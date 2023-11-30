@@ -1,4 +1,64 @@
 //====================================================================================================
+.header {
+	// .header__container
+	&__container {
+		display: flex;
+		flex-direction: column;
+		row-gap: 35px;
+	}
+	// .header__top
+	&__top {
+		padding-top: 35px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	// .header__logo
+	&__logo {
+	}
+	// .header__langs
+	&__langs {
+		display: flex;
+		align-items: center;
+		column-gap: 45px;
+	}
+	// .header__langs-ru
+	&__langs-ru {
+	}
+	// .header__langs-link
+	&__langs-link {
+	}
+	// .header__langs-en
+	&__langs-en {
+	}
+	// .header__bottom
+	&__bottom {
+	}
+	// .header__menu
+	&__menu {
+		display: flex;
+		align-items: center;
+	}
+}
+.menu {
+	// .menu__icon
+	&__icon {
+	}
+	// .menu__body
+	&__body {
+	}
+	// .menu__list
+	&__list {
+	}
+	// .menu__item
+	&__item {
+	}
+	// .menu__link
+	&__link {
+	}
+}
+.icon-menu {
+}
 
 //====================================================================================================
 
