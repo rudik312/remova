@@ -8,19 +8,26 @@
   }
   // .main__slide
   &__slide {
+    // height: 100%;
+    background-position: center top;
+    background-size: cover;
+    background-repeat: no-repeat;
   }
   // .main__content
   &__content {
+    padding-top: 570px;
+    padding-bottom: 248px;
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
     row-gap: 32px;
-    padding-top: 570px;
   }
   // .main__title
   &__title {
     @extend %lato-800;
     font-size: rem(128);
     line-height: math.div(120 , 128);
+    color: $white;
   }
   // .main__subtitle
   &__subtitle {
