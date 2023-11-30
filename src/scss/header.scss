@@ -1,5 +1,9 @@
 //====================================================================================================
 .header {
+	position: absolute;
+	right: 0;
+	left: 0;
+	top: 0;
 	// .header__container
 	&__container {
 		display: flex;
@@ -21,18 +25,30 @@
 		display: flex;
 		align-items: center;
 		column-gap: 45px;
+		@extend %poir-400;
+		font-size: rem(16);
+		line-height: 120%;
+		// color: $white;
 	}
 	// .header__langs-ru
 	&__langs-ru {
 	}
 	// .header__langs-link
 	&__langs-link {
+		@media (any-hover: hover){
+			transition: color 0.3s ease 0s;
+			&:hover{
+				color: $accent;
+			}
+		}
 	}
 	// .header__langs-en
 	&__langs-en {
 	}
 	// .header__bottom
 	&__bottom {
+		display: flex;
+		justify-content: center;
 	}
 	// .header__menu
 	&__menu {
@@ -49,12 +65,24 @@
 	}
 	// .menu__list
 	&__list {
+		display: flex;
+		align-items: center;
+		column-gap: 35px;
+		@extend %poir-400;
+		font-size: rem(24);
+		line-height: 120%;
 	}
 	// .menu__item
 	&__item {
 	}
 	// .menu__link
 	&__link {
+		@media (any-hover: hover){
+			transition: color 0.3s ease 0s;
+			&:hover{
+				color: $accent;
+			}
+		}
 	}
 }
 .icon-menu {
