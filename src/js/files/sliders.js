@@ -61,6 +61,9 @@ function initSliders() {
 			pagination: {
 				el: '.main__pagination',
 				clickable: true,
+				renderBullet: (index, className) => {
+					return `<span class='${className} main__pagination-custom'>Строительно - монтажные работы</span>`;
+				},
 			},
 		
 
@@ -73,10 +76,10 @@ function initSliders() {
 			*/
 
 			// Кнопки "влево/вправо"
-			navigation: {
-				prevEl: '.swiper-button-prev',
-				nextEl: '.swiper-button-next',
-			},
+			// navigation: {
+			// 	prevEl: '.swiper-button-prev',
+			// 	nextEl: '.swiper-button-next',
+			// },
 
 			// Брейкпоинты
 			/*
