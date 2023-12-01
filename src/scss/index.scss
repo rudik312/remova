@@ -2,20 +2,17 @@
 .main {
   // .main__slider
   &__slider {
-    max-width: 100%;
-    width: 100%;
-    height: 100%;
   }
   // .main__wrapper
   &__wrapper {
-    max-width: 100%;
-    width: 100%;
+    height: 100% !important;
   }
   // .main__slide
   &__slide {
-    // background-position: center;
-    // background-size: cover;
-    // background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 1000px !important;
     &:nth-child(1) {
       .main__title {
         @extend %lato-800;
@@ -76,18 +73,20 @@
     }
   }
   //.main__img
-  &__img {
-    position: relative;
-    img {
-      position: absolute;
-      right: 0;
-      left: 0;
-      width: 100%;
-      min-height: 100%;
-    }
-  }
+  // &__img {
+  //   width: 100%;
+  //   position: relative;
+  //   img {
+  //     position: absolute;
+  //     right: 0;
+  //     left: 0;
+  //     width: 100%;
+  //     min-height: 100%;
+  //   }
+  // }
   // .main__content
   &__content {
+    // min-height: 197px;
     z-index: 3;
     padding-top: 570px;
     padding-bottom: 270px;
