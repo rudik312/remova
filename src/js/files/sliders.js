@@ -29,16 +29,24 @@ function initSliders() {
 	// Проверяем, есть ли слайдер на стронице
 	if (document.querySelector('.main__slider')) { // Указываем скласс нужного слайдера
 		// Создаем слайдер
-		new Swiper('.main__slider', { // Указываем скласс нужного слайдера
+		let mainSlider = new Swiper('.main__slider', { // Указываем скласс нужного слайдера
+			
 			// Подключаем модули слайдера
 			// для конкретного случая
 			modules: [Autoplay, EffectFade, Pagination],
+			// preventClicks: true,
+			// preventClicksPropagation: true,
 			// observer: true,
 			// observeParents: true,
 			slidesPerView: 1,
 			spaceBetween: 0,
+			// slideToClickedSlide: true,
 			// autoHeight: true,
 			speed: 3000,
+			// normalizeSlideIndex: true,
+			// InitialSlide: 4,
+			
+			// virtualTranslate : true,
 
 			touchRatio: 0,
 			// simulateTouch: false,
@@ -51,7 +59,7 @@ function initSliders() {
         crossFade: true,     // added(resolve the overlapping of the slides)
 			},
 			autoplay: {
-				delay: 3000,
+				// delay: 3000,
 				// disableOnInteraction: false,
 			},
 			// slideShadows: true,
@@ -60,7 +68,7 @@ function initSliders() {
 			
 			pagination: {
 				el: '.main__pagination',
-				clickable: false,
+				clickable: true,
 				// renderBullet: (index, className) => {
 				// 	let arr = new Array("Строительно - монтажные работы", "Отделочные работы", "Нагревание, вентиляция и кондиционирование", "Реконструкция и ремонт", "Эксперты в сфере строительства");
 
@@ -115,6 +123,7 @@ function initSliders() {
 
 			}
 		});
+		
 	}
 }
 // Скролл на базе слайдера (по классу swiper_scroll для оболочки слайдера)
