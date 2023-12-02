@@ -27,6 +27,7 @@
 	}
 	// .header__langs
 	&__langs {
+		position: relative;
 		display: flex;
 		align-items: center;
 		column-gap: 45px;
@@ -34,6 +35,15 @@
 		font-size: rem(16);
 		line-height: 120%;
 		color: $white;
+		&::before{
+			content:'';
+			position: absolute;
+			height: 14px;
+			width: 0.5px;
+			background-color: #fff;
+			top: 2px;
+			right: 45%;
+		}
 	}
 	// .header__langs-ru
 	&__langs-ru {
