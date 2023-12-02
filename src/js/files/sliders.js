@@ -33,14 +33,14 @@ function initSliders() {
 			// Подключаем модули слайдера
 			// для конкретного случая
 			modules: [Autoplay, EffectFade, Pagination],
-			// observer: false,
-			// observeParents: false,
+			// observer: true,
+			// observeParents: true,
 			slidesPerView: 1,
 			spaceBetween: 0,
 			// autoHeight: true,
 			speed: 3000,
 
-			// touchRatio: 0,
+			touchRatio: 0,
 			// simulateTouch: false,
 			loop: true,
 			// preloadImages: false,
@@ -60,10 +60,17 @@ function initSliders() {
 			
 			pagination: {
 				el: '.main__pagination',
-				clickable: true,
-				renderBullet: (index, className) => {
-					return `<span class='${className} main__pagination-custom'>Строительно - монтажные работы</span>`;
-				},
+				clickable: false,
+				// renderBullet: (index, className) => {
+				// 	let arr = new Array("Строительно - монтажные работы", "Отделочные работы", "Нагревание, вентиляция и кондиционирование", "Реконструкция и ремонт", "Эксперты в сфере строительства");
+
+				// 	return `<span class='${className} main__pagination-custom'>Строительно - монтажные работы</span>`;
+					
+				// },
+				renderBullet: function (index, className) {
+					let title = ["Строительно - монтажные работы", "Отделочные работы", "Нагревание, вентиляция и кондиционирование", "Реконструкция и ремонт", "Эксперты в сфере строительства"];
+					return `<span class='${className} main__pagination-custom'>` + title[index] + `</span>`;
+					},
 			},
 		
 
