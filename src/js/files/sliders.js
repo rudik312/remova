@@ -132,7 +132,7 @@ function initSliders() {
 			
 			// Подключаем модули слайдера
 			// для конкретного случая
-			modules: [Autoplay, Pagination],
+			modules: [ Pagination],
 			// preventClicks: true,
 			// preventClicksPropagation: true,
 			// observer: false,
@@ -141,7 +141,7 @@ function initSliders() {
 			spaceBetween: 20,
 			slideToClickedSlide: true,
 			// autoHeight: true,
-			speed: 3000,
+			// speed: 3000,
 			grabCursor: true,
 			// normalizeSlideIndex: true,
 			// InitialSlide: 4,
@@ -159,7 +159,7 @@ function initSliders() {
       //   // crossFade: true,     // added(resolve the overlapping of the slides)
 			// },
 			autoplay: {
-				delay: 3000,
+				// delay: 3000,
 				disableOnInteraction: false,
 			},
 			// slideShadows: true,
