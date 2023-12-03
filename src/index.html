@@ -5,10 +5,10 @@
 	})
 	<body>
 		<div class="wrapper">
-			@@include('html/_header.htm',{})
+			<!-- @@include('html/_header.htm',{}) -->
 			<main class="page">
 				<!-- start main -->
-				<section class="main">
+				<!-- <section class="main">
 					<div class="main__slider swiper" >
 						<div class="main__wrapper swiper-wrapper">
 							<div class="main__slide swiper-slide" style="background-image: url(../img/main/slide-1.png);">
@@ -54,10 +54,10 @@
 						</div>
 						<div class="main__pagination swiper-pagination"></div>
 					</div>
-				</section>
+				</section> -->
 				<!-- end main -->
 				<!-- start main-projects -->
-				<section class="main-projects">
+				<!-- <section class="main-projects">
 					<div class="main-projects__inner">
 						<div class="main-projects__info">
 							<div class="main-projects__title title">
@@ -143,20 +143,22 @@
 								<div class="main-projects__pagination swiper-pagination"></div>
 							</div>
 					</div>
-				</section>
+				</section> -->
 				<!-- end main-projects -->
 				<!-- start news -->
-				<section class="news">
+				<!-- <section class="news">
 					<div class="news__container">
 						<div class="news__inner">
 							<div class="news__items">
 								<div class="news__item">
-									<div class="news__img-ibg">
-										<img src="@img/news/1.jpg" alt="news">
-									</div>
-									<div class="news__subtitle">
-										<a class="news__link" href="#">ООО «Ренова Групп» заключили договор с ООО «Антекк» на отделочные работы в ккомплексе апартаментов премиум -класса ЖК «SKYVIEW»
-										</a>
+									<div class="news__content">
+										<div class="news__img-ibg">
+											<img src="@img/news/1.jpg" alt="news">
+										</div>
+										<div class="news__subtitle">
+											<a class="news__link">ООО «Ренова Групп» заключили договор с ООО «Антекк» на отделочные работы в ккомплексе апартаментов премиум -класса ЖК «SKYVIEW»
+											</a>
+										</div>
 									</div>
 									<div class="news__date">
 										<p class="news__date-text">
@@ -165,12 +167,14 @@
 									</div>
 								</div>
 								<div class="news__item">
-									<div class="news__img-ibg">
-										<img src="@img/news/2.jpg" alt="news">
-									</div>
-									<div class="news__subtitle">
-										<a class="news__link" href="#">ООО «Ренова Групп» заботится о безопасности своих сотрудников! Все работники прошли инструктаж по технике безопасности и имеют удостоверения о прохождении.
-										</a>
+									<div class="news__content">
+										<div class="news__img-ibg">
+											<img src="@img/news/2.jpg" alt="news">
+										</div>
+										<div class="news__subtitle">
+											<a class="news__link">ООО «Ренова Групп» заботится о безопасности своих сотрудников! Все работники прошли инструктаж по технике безопасности и имеют удостоверения о прохождении.
+											</a>
+										</div>
 									</div>
 									<div class="news__date">
 										<p class="news__date-text">
@@ -189,8 +193,41 @@
 							</div>
 						</div>
 					</div>
-				</section>
+				</section> -->
 				<!-- end news -->
+				<!-- start partners -->
+				<section class="partners">
+					<div class="partners__container">
+						<div class="partners__inner" style="background-image: url(../img/partners/partners-bg.png);">
+							<div class="partners__title title">
+								<h2>Партнеры</h2>
+							</div>
+							<div class="partners__items">
+								<div class="partners__item">
+									<div class="partners__img">
+										<img src="@img/partners/1.png" alt="partner">
+									</div>
+								</div>
+								<div class="partners__item">
+									<div class="partners__img">
+										<img src="@img/partners/2.png" alt="partner">
+									</div>
+								</div>
+								<div class="partners__item">
+									<div class="partners__img">
+										<img src="@img/partners/3.png" alt="partner">
+									</div>
+								</div>
+								<div class="partners__item">
+									<div class="partners__img">
+										<img src="@img/partners/4.png" alt="partner">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- end partners -->
 			</main>
 			@@include('html/_footer.htm',{})
 		</div>
