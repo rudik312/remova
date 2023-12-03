@@ -132,16 +132,17 @@ function initSliders() {
 			
 			// Подключаем модули слайдера
 			// для конкретного случая
-			modules: [ Pagination],
+			modules: [Autoplay, Pagination],
 			// preventClicks: true,
 			// preventClicksPropagation: true,
 			// observer: false,
 			// observeParents: false,
 			slidesPerView: 2.5,
+			// centeredSlides: true,
 			spaceBetween: 20,
-			slideToClickedSlide: true,
+			// slideToClickedSlide: true,
 			// autoHeight: true,
-			// speed: 3000,
+			speed: 3000,
 			grabCursor: true,
 			// normalizeSlideIndex: true,
 			// InitialSlide: 4,
