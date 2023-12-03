@@ -222,7 +222,7 @@ import * as flsScroll from "./files/scroll/scroll.js";
 /* Подключаем файлы со своим кодом */
 
 // подключаем Swiper 11.0.5
-import "./libs/swiper-bundle.min.js";
+// import "./libs/swiper-bundle.min.js";
 
 import "./libs/jquery.min.js"
 
