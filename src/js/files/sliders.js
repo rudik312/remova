@@ -7,7 +7,7 @@
 // Подключаем слайдер Swiper из node_modules
 // При необходимости подключаем дополнительные модули слайдера, указывая их в {} через запятую
 // Пример: { Navigation, Autoplay }
-import Swiper, {Autoplay, EffectFade, Pagination, Navigation} from 'swiper';
+import Swiper, {Autoplay, EffectFade, Pagination} from 'swiper';
 /*
 Основниые модули слайдера:
 Navigation, Pagination, Autoplay, 
@@ -135,8 +135,8 @@ function initSliders() {
 			modules: [Autoplay, Pagination],
 			// preventClicks: true,
 			// preventClicksPropagation: true,
-			// observer: false,
-			// observeParents: false,
+			observer: true,
+			observeParents: true,
 			slidesPerView: 2.5,
 			// centeredSlides: true,
 			spaceBetween: 20,
@@ -144,8 +144,9 @@ function initSliders() {
 			// autoHeight: true,
 			speed: 3000,
 			grabCursor: true,
+			// slidesPerGroup: 3,
 			// normalizeSlideIndex: true,
-			// InitialSlide: 4,
+			// InitialSlide: 1,
 			
 			// virtualTranslate : true,
 
@@ -162,6 +163,8 @@ function initSliders() {
 			autoplay: {
 				// delay: 3000,
 				disableOnInteraction: false,
+				// dynamicBullets: true,
+				// dynamicMainBullets: 4,
 			},
 			// slideShadows: true,
 
@@ -170,7 +173,11 @@ function initSliders() {
 			pagination: {
 				el: '.main-projects__pagination',
 				clickable: true,
-
+				renderBullet: function (index, className) {                 //added
+					return `<span class="${className} main-projects__bullet"></span>` //added
+			}, 
+				dynamicBullets: true,
+				dynamicMainBullets: 1,
 			},
 		
 
@@ -216,7 +223,17 @@ function initSliders() {
 			}
 		});
 		
+		// let bullets = document.querySelectorAll('.main-projects__bullet');
+		
+		// for (let i = 0; i < bullets.length; i++) {
+		// 	const element = bullets[i];
+		// 	console.log(element);
+
+		// }
+		
 	}
+
+
 }
 // Скролл на базе слайдера (по классу swiper_scroll для оболочки слайдера)
 function initSlidersScroll() {
