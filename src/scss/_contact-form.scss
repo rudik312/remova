@@ -4,6 +4,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  background-color: #070707;
   // .contact-form__container
   &__container {
     padding-top: 75px;
@@ -11,6 +12,7 @@
   }
   // .contact-form__inner
   &__inner {
+    
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 143px;
@@ -57,6 +59,14 @@
     background: rgba(4, 4, 6, 0.70);
     box-shadow: 1px 1px 7px 2px rgba(6, 6, 6, 0.31) inset, 5px 6px 30.7px 1px rgba(29, 29, 29, 0.25);
     backdrop-filter: blur(7.5px);
+    &::placeholder {
+      @extend %poir-400;
+      font-size: rem(20);
+      line-height: math.div(19 , 20);
+      // color: #fff;
+      // color: $accent;
+      color: #505050;
+    }
   }
   // .form__checkbox
   &__checkbox {
@@ -67,6 +77,9 @@
   }
   // .form__button-box
   &__button-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   // .form__button
   &__button {
@@ -82,10 +95,7 @@
 .checkbox {
   // .checkbox__input
   &__input {
-    @extend %poir-400;
-    font-size: rem(20);
-    line-height: math.div(19 , 20);
-    color: #505050;
+
   }
   // .checkbox__label
   &__label {
@@ -98,4 +108,15 @@
   &__text {
 
   }
+}
+
+.form__input:focus {
+  outline: 1px solid $accent;
+}
+
+.form__input._form-error {
+  outline: 2px solid #f00;
+}
+.checkbox__input._form-error {
+  outline: 2px solid #f00;
 }

@@ -1,3 +1,127 @@
 //====================================================================================================
+.footer {
+  background-color: #070707;
+  // .footer__container
+  &__container {
+    padding-top: 117px;
+    padding-bottom: 30px;
+  }
+  // .footer__top
+  &__top {
+    padding-top: 30px;
+    padding-bottom: 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  // .footer__contacts
+  &__contacts {
+    max-width: 326px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    @extend %poir-400;
+    font-size: rem(16);
+    line-height: math.div(15 , 16);
+    color: #fff;
+  }
+  // .footer__item
+  &__item {
+
+  }
+  // .footer__item-phone
+  &__item-phone {
+  }
+  // .footer__item-email
+  &__item-email {
+  }
+  // .footer__item-address
+  &__item-address {
+    font-style: normal;
+  }
+  // .footer__presentation
+  &__presentation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 24px;
+  }
+  // .footer__presentation-title
+  &__presentation-title {
+    @extend %poir-400;
+    font-size: rem(20);
+    line-height: math.div(19 , 20);
+    color: #fff;
+  }
+  // .footer__presentation-img
+  &__presentation-img {
+  }
+  // .footer__presentation-link
+  &__presentation-link {
+  }
+  // .footer__bottom
+  &__bottom {
+    // display: flex;
+    // flex-direction: column;
+    // align-items: center;
+  }
+  // .footer__inner
+  &__inner {
+    
+  }
+  // .footer__social
+  &__social {
+    padding-top: 35px;
+    padding-bottom: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 11px;
+  }
+  // .footer__social-item
+  &__social-item {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    background-color: #26272C;
+  }
+  // .footer__social-link
+  &__social-link {
+    img {
+      width: 20px;
+      height: 20px;
+    }
+  }
+  // .footer__copyright
+  &__copyright {
+    padding-bottom: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $accent;
+    @extend %poir-400;
+    font-size: rem(13);
+    line-height: math.div(13 , 13);
+  }
+}
+.design-author {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__text {
+    @extend %poir-400;
+    font-size: rem(16);
+    line-height: math.div(8 , 16);
+    color: #6E6E6E;
+    
+  }
+  // .design-author__link
+  &__link {
+  }
+}
 
 //====================================================================================================
