@@ -20,6 +20,8 @@
 	}
 	// .header__logo
 	&__logo {
+		position: relative;
+		z-index: 50;
 		img {
 			width: 183px;
 			height: 52px;
@@ -78,22 +80,31 @@
 		justify-content: flex-end;
 		position: relative;
 		@media (max-width:$tablet){
+			padding: 30px 40px 30px 70px;
 			position: fixed;
 			flex-direction: column;
+			row-gap: 30px;
+			background: #2dda58;
 			// justify-content: space-between;
-			padding-top: 80px;
+			// padding-top: 80px;
 			right: -100%;
-			top: 0;
-			width: calc(100% - 20px);
-			height: 100%;
+			top: 80px;
+			// width: calc(100% - 20px);
+			// height: 100%;
+			// width: 200px;
+			// height: 380px;
 			overflow: auto;
 			transition: right 0.3s ease 0s;
-			background-color: #fff;
+			// background-color: #fff;
 			z-index: 5;
+			background-color: #040406;
+			box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 			.menu-open & {
 				z-index: 5;
-				right: 10px;
-				top: 0;
+				// right: 10px;
+				// top: 0;
+				right: 70px;
+				top: 90px;
 				&::before {
 					right: 0;
 				}
@@ -115,6 +126,14 @@
 		font-size: rem(24);
 		line-height: 120%;
 		color: $white;
+		@media (max-width: em(1180)){
+			@include adaptiveValue("font-size", 24, 18, 1180, 1000, 1);
+		}
+		@media (max-width:$tablet){
+			flex-direction: column;
+			justify-content: center;
+			row-gap: 28px;
+		}
 	}
 	// .menu__item
 	&__item {
@@ -141,10 +160,10 @@
 	@media (max-width: $tablet) {
 		display: block;
 		position: relative;
-		width: rem(26);
+		width: rem(43);
 		height: rem(18);
 		cursor: pointer;
-		z-index: 5;
+		z-index: 50;
 		top: 0;
 		span,
 		&::before,
@@ -169,30 +188,30 @@
 			top: calc(50% - rem(1));
 		}
 		.menu-open & {
-			padding: 14px;
+			padding: 20px;
 			background-color: #fff;
 			margin-right: 5px;
 			border-radius: 50%;
 			span {
-				
 				width: 0;
 			}
 			&::before,
 			&::after {
+				background-color: #000000;
 				// width: 100%;
-				width: 14px;
+				width: 18px;
 			}
 			&::before {
 				// top: calc(50% - rem(1));
 				top: calc(50% - 1px);
 				transform: rotate(-45deg);
-				right: 7px;
+				right: 12px;
 			}
 			&::after {
 				// bottom: calc(50% - rem(1));
 				bottom: calc(50% - 1px);
 				transform: rotate(45deg);
-				left: 7px;
+				left: 12px;
 			}
 		}
 
