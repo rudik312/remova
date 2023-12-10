@@ -19,7 +19,7 @@
       background-size: 120%;
       background-repeat: no-repeat;
       background-position: 100% 60% !important;
-      height: 650px !important;
+      height: 500px !important;
     }
   }
   // .main__container
@@ -36,7 +36,7 @@
     row-gap: 35px;
     z-index: 500 !important;
     @media (max-width: em(1390)){
-      padding-top: 330px;
+      padding-top: 220px;
     }
   }
   // .main__title
@@ -56,7 +56,7 @@
     font-size: rem(48);
     line-height: math.div(45 , 48);
     color: $accent;
-    @media (max-width: em(1480)){
+    @media (max-width: em(1390)){
       @include adaptiveValue("font-size", 48, 32, 1480, 1360, 1);
     }
   }
@@ -67,6 +67,10 @@
     font-size: rem(64);
     line-height: math.div(60 , 64);
     color: $white;
+    @media (max-width: em(1390)){
+      @include adaptiveValue("font-size", 64, 44, 1390, 1360, 1);
+      @include adaptiveValue("line-height", 60, 40, 1390, 1360, 1);
+    }
   }
 
   &__subtitle {
@@ -75,6 +79,9 @@
     font-size: rem(48);
     line-height: math.div(45 , 48);
     color: $accent;
+    @media (max-width: em(1390)){
+      @include adaptiveValue("font-size", 38, 32, 1480, 1360, 1);
+    }
   }
   //main__subtitle-link
   &__subtitle-link {
@@ -83,6 +90,9 @@
     font-size: rem(48);
     line-height: math.div(45 , 48);
     color: $accent;
+    @media (max-width: em(1390)){
+      @include adaptiveValue("font-size", 48, 32, 1480, 1360, 1);
+    }
   }
   // .main__pagination
   &__pagination {
@@ -93,6 +103,9 @@
     width: 100%;
     height: 100%;
     background-color: #070707;
+    @media (max-width: em(1390)){
+      bottom: 0;
+    }
   }
 }
 .main__pagination-custom {
@@ -123,6 +136,7 @@
     box-shadow: 1px 1px 7px -4px rgba(6, 6, 6, 0.31) inset, 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     backdrop-filter: blur(7.5px);
   }
+
 }
 
 .main__pagination-custom {
