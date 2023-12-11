@@ -21,6 +21,10 @@
       background-position: 100% 50% !important;
       height: 500px !important;
     }
+    @media (max-width: em(620)){
+      background-size: 170%;
+      background-position: 60% 0% !important;
+    }
   }
   // .main__container
   &__container {
@@ -90,6 +94,10 @@
       @include adaptiveValue("font-size", 64, 38, 1390, 1360, 1);
       @include adaptiveValue("line-height", 60, 36, 1390, 1360, 1);
     }
+    @media (max-width: em(550)){
+      font-size: rem(32);
+      line-height: math.div(38 , 32);
+    }
   }
 
   &__subtitle {
@@ -100,6 +108,10 @@
     color: $accent;
     @media (max-width: em(1390)){
       @include adaptiveValue("font-size", 38, 26, 1390, 1360, 1);
+    }
+    @media (max-width: em(550)){
+      font-size: rem(18);
+      line-height: math.div(24 , 18);
     }
   }
   //main__subtitle-link
