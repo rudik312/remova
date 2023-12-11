@@ -28,6 +28,14 @@
 		img {
 			width: 183px;
 			height: 52px;
+			@media (max-width:$tablet){
+				width: 148px;
+				height: 37px;
+			}
+			@media (max-width:$mobileSmall){
+				width: 112px;
+				height: 28px;
+			}
 		}
 	}
 	// .header__langs
@@ -83,7 +91,7 @@
 		justify-content: flex-end;
 		position: relative;
 		@media (max-width:$tablet){
-			padding: 30px 70px 30px 70px;
+			padding: 30px 40px 30px 70px;
 			position: fixed;
 			flex-direction: column;
 			row-gap: 30px;
@@ -136,6 +144,9 @@
 			flex-direction: column;
 			justify-content: center;
 			row-gap: 28px;
+			font-family: 'Montserrat', sans-serif;
+			font-weight: 300;
+			align-items: flex-end;
 		}
 	}
 	// .menu__item
