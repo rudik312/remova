@@ -45,6 +45,9 @@
     @media (max-width:$tablet){
       row-gap: 15px;
     }
+    @media (max-width:$mobileSmall){
+      row-gap: 10px;
+    }
   }
   // .main__title
   &__title-main {
@@ -123,6 +126,10 @@
     color: $accent;
     @media (max-width: em(1390)){
       @include adaptiveValue("font-size", 48, 32, 1390, 1360, 1);
+    }
+    @media (max-width: em(550)){
+      font-size: rem(18);
+      line-height: math.div(24 , 18);
     }
   }
   // .main__pagination
