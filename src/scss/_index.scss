@@ -24,6 +24,7 @@
     @media (max-width: em(620)){
       background-size: 170%;
       background-position: 60% 0% !important;
+      height: 450px !important;
     }
   }
   // .main__container
@@ -44,6 +45,9 @@
     }
     @media (max-width:$tablet){
       row-gap: 15px;
+    }
+    @media (max-width: em(620)){
+      padding-top: 180px;
     }
     @media (max-width:$mobileSmall){
       row-gap: 10px;
