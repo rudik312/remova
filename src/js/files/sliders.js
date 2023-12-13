@@ -132,7 +132,7 @@ function initSliders() {
 			
 			// Подключаем модули слайдера
 			// для конкретного случая
-			modules: [ Pagination],
+			modules: [Autoplay, Pagination],
 			// preventClicks: true,
 			// preventClicksPropagation: true,
 			observer: true,
