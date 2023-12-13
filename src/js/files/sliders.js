@@ -132,7 +132,7 @@ function initSliders() {
 			
 			// Подключаем модули слайдера
 			// для конкретного случая
-			modules: [Autoplay, Pagination],
+			modules: [ Pagination],
 			// preventClicks: true,
 			// preventClicksPropagation: true,
 			observer: true,
@@ -196,27 +196,30 @@ function initSliders() {
 			// },
 
 			// Брейкпоинты
-			/*
+			
 			breakpoints: {
 				320: {
-					slidesPerView: 1,
-					spaceBetween: 0,
+					slidesPerView: 2,
+					spaceBetween: 20,
 					autoHeight: true,
 				},
 				768: {
 					slidesPerView: 2,
 					spaceBetween: 20,
+					autoHeight: true,
 				},
-				992: {
-					slidesPerView: 3,
+				1000: {
+					slidesPerView: 2,
 					spaceBetween: 20,
+					autoHeight: true,
 				},
-				1268: {
-					slidesPerView: 4,
-					spaceBetween: 30,
+				1260: {
+					slidesPerView: 2.5,
+					spaceBetween: 20,
+					autoHeight: true,
 				},
 			},
-			*/
+			
 			// События
 			on: {
 
