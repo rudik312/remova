@@ -417,9 +417,13 @@
 //========================================================================================================================================================
 .news {
   background-color: #070707;
+  //.news__container
+  &__container {
+    padding-top: 50px;
+  }
   // .news__inner
   &__inner {
-    padding-top: 100px;
+    padding-top: 50px;
     padding-bottom: 30px;
     display: flex;
     column-gap: 265px;
@@ -429,15 +433,23 @@
       // column-gap: 100px;
       @include adaptiveValue("column-gap", 100, 55, 1000, 768, 1);
     }
+    @media (max-width: em(620)){
+      flex-direction: column-reverse;
+
+    }
   }
   // .news__items
   &__items {
     display: flex;
-    @include adaptiveValue("column-gap", 107, 70, 1360, 1000, 1);
+    @include adaptiveValue("column-gap", 20, 5, 1360, 1000, 1);
     z-index: 5;
+    @media (max-width:$mobile){
+      // @include adaptiveValue("column-gap", 20, 10, 768, 620, 1);
+    }
   }
   // .news__item
   &__item {
+    padding: 25px;
     max-width: 380px;
     width: 100%;
     display: flex;
@@ -445,7 +457,11 @@
     justify-content: space-between;
     row-gap: 36px;
     @media (max-width:$tablet){
+      // padding: 15px 25px;
       row-gap: 15px;
+    }
+    @media (max-width:$mobile){
+      padding: 10px 5px;
     }
   }
   //.news__content
@@ -475,6 +491,10 @@
       font-size: rem(14);
       line-height: math.div(14 , 14);
     }
+    @media (max-width: em(620)){
+      font-size: rem(11);
+      line-height: math.div(11 , 11);
+    }
   }
   // .news__date
   &__date {
@@ -485,6 +505,10 @@
     @media (max-width:$tablet){
       font-size: rem(12);
       line-height: math.div(12 , 12);
+    }
+    @media (max-width: em(620)){
+      font-size: rem(10);
+      line-height: math.div(10 , 10);
     }
   }
   // .news__date-text
@@ -548,6 +572,7 @@
     row-gap: 20px;
   }
   @media (max-width: em(620)){
+    align-self: flex-end;
     row-gap: 10px;
   }
 }
