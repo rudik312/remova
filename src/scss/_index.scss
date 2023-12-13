@@ -368,6 +368,7 @@
     column-gap: 6px;
     // width: 100px;
     width: auto !important;
+    bottom: 8%;
     // .main-projects__pagination + .swiper-pagination-bullet
     & .swiper-pagination-bullet {
       border-radius: 50%;
@@ -390,6 +391,10 @@
     }
     @media (max-width:$tablet){
       left: 90px;
+      bottom: 10%;
+    }
+    @media (max-width:$mobile){
+      bottom: 14%;
     }
     @media (max-width: em(620)){
       justify-content: center;

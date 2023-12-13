@@ -201,22 +201,22 @@ function initSliders() {
 				320: {
 					slidesPerView: 2,
 					spaceBetween: 20,
-					autoHeight: true,
+					// autoHeight: true,
 				},
 				768: {
 					slidesPerView: 2,
 					spaceBetween: 20,
-					autoHeight: true,
+					// autoHeight: true,
 				},
 				1000: {
 					slidesPerView: 2,
 					spaceBetween: 20,
-					autoHeight: true,
+					// autoHeight: true,
 				},
 				1260: {
 					slidesPerView: 2.5,
 					spaceBetween: 20,
-					autoHeight: true,
+					// autoHeight: true,
 				},
 			},
 			
