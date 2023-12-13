@@ -91,6 +91,11 @@ $white: #ffffff;
   font-size: rem(20);
   line-height: math.div(19 , 20);
   color: #fff;
+  @media (max-width:$tablet){
+    padding: 7px 45px;
+    font-size: rem(12);
+    line-height: math.div(12 , 12);
+  }
 }
 
 

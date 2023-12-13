@@ -12,10 +12,9 @@
   }
   // .contact-form__inner
   &__inner {
-    
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    column-gap: 143px;
+    @include adaptiveValue("column-gap", 143, 85, 1380, 1000, 1);
   }
   // .contact-form__item
   &__item {
@@ -24,6 +23,9 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
+      @media (max-width:$tablet){
+        align-items: center;
+      }
     }
   }
   // .contact-form__title
@@ -32,7 +34,11 @@
     font-size: rem(48);
     line-height: math.div(46 , 48);
     color: #fff;
-    
+    @media (max-width:$tablet){
+      max-width: 248px;
+      font-size: rem(32);
+      line-height: math.div(30 , 32);
+    }
   }
 }
 //.form
@@ -46,6 +52,9 @@
     display: flex;
     flex-direction: column;
     row-gap: 16px;
+    @media (max-width:$tablet){
+      row-gap: 8px;
+    }
   }
   // .form__item
   &__item {
@@ -66,6 +75,13 @@
       // color: #fff;
       // color: $accent;
       color: #505050;
+      @media (max-width:$tablet){
+        font-size: rem(12);
+        line-height: math.div(12 , 12);
+      }
+    }
+    @media (max-width:$tablet){
+      padding: 10px 10px 10px 6px;
     }
   }
   // .form__checkbox
@@ -74,6 +90,9 @@
     display: flex;
     align-items: center;
     column-gap: 25px;
+    @media (max-width:$tablet){
+      column-gap: 15px;
+    }
   }
   // .form__button-box
   &__button-box {
@@ -90,6 +109,9 @@
     // line-height: math.div(19 , 20);
     // color: #fff;
   }
+  @media (max-width:$tablet){
+    row-gap: 20px;
+  }
 }
 //.checkbox
 .checkbox {
@@ -103,6 +125,10 @@
     font-size: rem(20);
     line-height: math.div(19 , 20);
     color: #fff;
+    @media (max-width:$tablet){
+      font-size: rem(14);
+      line-height: math.div(14 , 14);
+    }
   }
   // .checkbox__text
   &__text {

@@ -1,7 +1,6 @@
 //.main
 //========================================================================================================================================================
 .main {
-  padding-bottom: 60px;
   // .main__slider
   &__slider {
   }
@@ -144,12 +143,7 @@
     justify-content: center;
     gap: 20px;
     flex-wrap: wrap;
-    // width: 100%;
-    // height: 100%;
     background-color: #070707;
-    // @media (max-width: em(1390)){
-    //   // bottom: 0;
-    // }
   }
   @media (max-width:$tablet){
     padding-bottom: 20px;
@@ -238,13 +232,11 @@
     padding-top: 100px;
     padding-bottom: 50px;
     display: flex;
-    // column-gap: 220px;
     padding-left: max(15px, calc((100% - 1170px) / 2));
     padding-right: max(15px, calc((100% - 1440px) / 2));
     background-color: #070707;
     @include adaptiveValue("column-gap", 220, 100, 1280, 1000, 1);
     @media (max-width:$tablet){
-      // column-gap: 100px;
       @include adaptiveValue("column-gap", 100, 55, 1000, 768, 1);
     }
     @media (max-width:$tablet){
@@ -300,10 +292,6 @@
   &__subtitle {
     z-index: 5;
     width: 147px;
-    // @extend %poir-400;
-    // font-size: rem(20);
-    // line-height: math.div(19 , 20);
-    // color: $white;
   }
   //.main-projects__box
   &__box {
@@ -368,7 +356,7 @@
     column-gap: 6px;
     // width: 100px;
     width: auto !important;
-    bottom: 8%;
+    bottom: 10%;
     // .main-projects__pagination + .swiper-pagination-bullet
     & .swiper-pagination-bullet {
       border-radius: 50%;
@@ -391,7 +379,7 @@
     }
     @media (max-width:$tablet){
       left: 90px;
-      bottom: 10%;
+      bottom: 11%;
     }
     @media (max-width:$mobile){
       bottom: 14%;
@@ -406,10 +394,7 @@
     padding-top: 20px;
   }
 }
-/* hide bullets */
-.swiper-pagination-bullet:not(.swiper-pagination-bullet-active-main){
-  // opacity: 0;
-}
+
 
 //========================================================================================================================================================
 
@@ -425,17 +410,15 @@
   // .news__inner
   &__inner {
     padding-top: 50px;
-    padding-bottom: 30px;
+    // padding-bottom: 30px;
     display: flex;
     column-gap: 265px;
-    // @include adaptiveValue("column-gap", 265, 50, 1360, 1000, 1);
     @include adaptiveValue("column-gap", 220, 100, 1280, 1000, 1);
     @media (max-width:$tablet){
-      // column-gap: 100px;
       @include adaptiveValue("column-gap", 100, 55, 1000, 768, 1);
     }
     @media (max-width: em(620)){
-      padding-top: 0;
+      padding-top: 25px;
       flex-direction: column-reverse;
 
     }
@@ -445,9 +428,6 @@
     display: flex;
     @include adaptiveValue("column-gap", 20, 5, 1360, 1000, 1);
     z-index: 5;
-    @media (max-width:$mobile){
-      // @include adaptiveValue("column-gap", 20, 10, 768, 620, 1);
-    }
     @media (max-width: em(620)){
       column-gap: 20px;
     }
@@ -544,10 +524,6 @@
   &__subtitle {
     z-index: 5;
     width: 180px;
-    // @extend %poir-400;
-    // font-size: rem(20);
-    // line-height: math.div(19 , 20);
-    // color: $white;
     text-align: right;
     @media (max-width:$tablet){
       width: 147px;
@@ -597,13 +573,29 @@
   &__inner {
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center top;
-    padding-top: 216px;
+    background-position: center top 50%;
+    padding-top: 70px;
     padding-bottom: 220px;
     display: flex;
     flex-direction: column;
     align-items: center;
     row-gap: 61px;
+    @media (max-width:$tablet){
+      padding-top: 20px;
+      padding-bottom: 100px;
+      row-gap: 20px;
+      background-position: center 50%;
+      background-size: 80%;
+    }
+    @media (max-width:$mobile){
+      // background-size: 130%;
+    }
+    @media (max-width: em(620)){
+      background-position: center 60%;
+    }
+    @media (max-width:$mobileSmall){
+      row-gap: 10px;
+    }
   }
   // .partners__title
   &__title {
@@ -613,6 +605,12 @@
     display: flex;
     align-items: center;
     column-gap: 83px;
+    @media (max-width:$tablet){
+      column-gap: 65px;
+    }
+    @media (max-width: em(620)){
+      column-gap: 24px;
+    }
   }
   // .partners__item
   &__item {
