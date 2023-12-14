@@ -147,6 +147,9 @@ body {
 
 // Подключение стилей отдельных страниц
 @import "index";
+@import "page-about";
 
 //Подключение отдельных блоков
-@import "contact-form";
+@import "blocks/contact-form";
+@import "blocks/breadcrumbs";
+

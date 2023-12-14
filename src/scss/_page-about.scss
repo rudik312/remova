@@ -1,0 +1,42 @@
+//.about
+//========================================================================================================================================================
+.about {
+  // .about__container
+  &__container {
+
+  }
+  // .about__heading
+  &__heading {
+    max-width: 450px;
+    padding-top: 87px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+  }
+  // .about__title
+  &__title {
+    @extend %lato-700;
+    font-size: rem(64);
+    line-height: math.div(60 , 64);
+    color: $white;
+  }
+  // .about__subtitle
+  &__subtitle {
+    @extend %lato-400;
+    font-size: rem(32);
+    line-height: math.div(30 , 32);
+    color: $white;
+  }
+  // .about__items
+  &__items {
+  }
+  // .about__item
+  &__item {
+  }
+  // .about__info
+  &__info {
+  }
+  // .about__content
+  &__content {
+  }
+}

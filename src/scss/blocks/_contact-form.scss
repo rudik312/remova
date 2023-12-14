@@ -129,9 +129,9 @@
     }
   }
   // .form__button
-  &__button {
+  // &__button {
 
-  }
+  // }
   @media (max-width:$tablet){
     row-gap: 20px;
   }
@@ -139,9 +139,9 @@
 //.checkbox
 .checkbox {
   // .checkbox__input
-  &__input {
+  // &__input {
 
-  }
+  // }
   // .checkbox__label
   &__label {
     @extend %poir-400;
@@ -158,9 +158,9 @@
     }
   }
   // .checkbox__text
-  &__text {
+  // &__text {
 
-  }
+  // }
 }
 
 .form__input:focus {
