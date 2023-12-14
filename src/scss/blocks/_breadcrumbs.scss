@@ -4,6 +4,14 @@
   &__container {
     padding-top: 190px;
     padding-bottom: 45px;
+    @media (max-width:$tablet){
+      padding-top: 100px;
+      padding-bottom: 25px;
+    }
+    @media (max-width: em(420)){
+      padding-top: 85px;
+      padding-bottom: 10px;
+    }
   }
   // .breadcrumbs__list
   &__list {
@@ -21,17 +29,17 @@
     &::after{
       content:'';
       width: 30px;
-      height: 2px;
+      height: 0.5px;
       position: absolute;
       background-color: #ffffff;
       top: 10px;
       right: 22px;
       // transform: rotate(0deg);
       @media (max-width: em(420)){
+        top: 8px;
         // height: 5px; 
         // width: 1px;     
-        // top: 3px;
-        // right: 10px;
+        right: 12px;
       }
     }
     // &::before{
@@ -58,12 +66,12 @@
         display: none;
       }
       @media (max-width: em(420)){
-        // font-size: rem(12);
+        font-size: rem(11);
       }
     }
     @media (max-width: em(420)){
-      // font-size: rem(10);
-      // padding-right: 20px;
+      font-size: rem(11);
+      padding-right: 55px;
     }
   }
   // .breadcrumbs__link
