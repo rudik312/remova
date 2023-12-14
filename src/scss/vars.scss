@@ -96,6 +96,11 @@ $white: #ffffff;
     font-size: rem(12);
     line-height: math.div(12 , 12);
   }
+  @media (max-width: em(420)){
+    padding: 5px 50px;
+    font-size: rem(10);
+    line-height: math.div(10 , 10);
+  }
 }
 
 
