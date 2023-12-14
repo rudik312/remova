@@ -5,14 +5,31 @@
   &__container {
     padding-top: 117px;
     padding-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 70px;
+    @media (max-width:$tablet){
+      padding-top: 85px;
+      padding-bottom: 50px;
+      row-gap: 40px;
+    }
+    @media (max-width: em(420)){
+      padding-top: 40px;
+      row-gap: 30px;
+    }
   }
   // .footer__top
   &__top {
-    padding-top: 30px;
-    padding-bottom: 35px;
+    padding-top: 35px;
+    // padding-bottom: 35px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @media (max-width:$tablet){
+      padding-top: 72px;
+      flex-direction: column-reverse;
+      row-gap: 40px;
+    }
   }
   // .footer__contacts
   &__contacts {
@@ -24,20 +41,31 @@
     font-size: rem(16);
     line-height: math.div(15 , 16);
     color: #fff;
+    @media (max-width:$tablet){
+      row-gap: 10px;
+      max-width: 100%;
+      align-items: center;
+    }
+    @media (max-width: em(420)){
+      row-gap: 14px;
+      font-size: rem(12);
+      line-height: math.div(12 , 12);
+    }
   }
   // .footer__item
-  &__item {
+  // &__item {
 
-  }
+  // }
   // .footer__item-phone
-  &__item-phone {
-  }
+
   // .footer__item-email
-  &__item-email {
-  }
+
   // .footer__item-address
   &__item-address {
     font-style: normal;
+    @media (max-width:$tablet){
+      text-align: center;
+    }
   }
   // .footer__presentation
   &__presentation {
@@ -54,24 +82,21 @@
     color: #fff;
   }
   // .footer__presentation-img
-  &__presentation-img {
-  }
+
   // .footer__presentation-link
   &__presentation-link {
+    img {
+      width: 86px;
+      height: 85px;
+    }
   }
   // .footer__bottom
-  &__bottom {
-    // display: flex;
-    // flex-direction: column;
-    // align-items: center;
-  }
+
   // .footer__inner
-  &__inner {
-    
-  }
+
   // .footer__social
   &__social {
-    padding-top: 35px;
+    // padding-top: 35px;
     padding-bottom: 35px;
     display: flex;
     align-items: center;
@@ -120,8 +145,7 @@
     
   }
   // .design-author__link
-  &__link {
-  }
+
 }
 
 //====================================================================================================
