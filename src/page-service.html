@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ru">
+	@@include('html/_head.htm',{
+	"title":"О компании"
+	})
+	<body>
+		<div class="wrapper">
+			@@include('html/_header.htm',{})
+			<main class="page">
+				<!-- start breadcrumbs-section breadcrumbs -->
+				<section class="breadcrumbs-section breadcrumbs">
+					<div class="breadcrumbs__container">
+						<ul class="breadcrumbs__list">
+							<li class="breadcrumbs__item">
+								<a  class="breadcrumbs__link" href="./">
+									Главная
+								</a>
+							</li>
+							<li class="breadcrumbs__item">
+								<a  class="breadcrumbs__link" href="#">
+									Услуги
+								</a>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<!-- end breadcrumbs-section breadcrumbs -->
+
+				<section class="construction">
+					<div class="construction__wrapper">
+						<div class="construction__heading">
+							<div class="construction__box">
+								<h3 class="construction__title">Строительно-монтажные работы</h3>
+								<img class="construction__title-logo" src="@img/page-service/title-logo.svg" alt="logo">
+							</div>
+							<div class="construction__subtitle">
+								<p>Наша основная компетенция –полный спектр работ, направленных на возведение промышленных и жилых зданий.</p>
+								<p>Они делятся на три основные группы:</p>
+							</div>
+						</div>
+						<div class="construction__content" style="background-image: url(../img/page-service/construction-bg.png);">
+							<div class="construction__info">
+								<p>
+									Отделочные работы – внутренняя и внешняя отделка зданий
+								</p>
+							</div>
+							<div class="construction__inner construction-inner">
+								<div class="construction-inner__title">
+									<h4>
+										Специальные работы – связанные с использованием особых материалов и конструкций
+									</h4>
+								</div>
+								<div class="construction-inner__items">
+									<ul class="construction-inner__list">
+										<li class="construction-inner__item">
+											<p>Устройство водопровода, канализации</p>
+										</li>
+										<li class="construction-inner__item">
+											<p>Газоснабжения</p>
+										</li>
+										<li class="construction-inner__item">
+											<p>Электротехнические работы</p>
+										</li>
+										<li class="construction-inner__item">
+											<p>Монтаж лифтов</p>
+										</li>
+										<li class="construction-inner__item">
+											<p>Мехнологического</p>
+										</li>
+										<li class="construction-inner__item">
+											<p>Энергетического и другого оборудования</p>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="construction__inner construction-inner">
+								<div class="construction-inner__title">
+									<h4>
+										Общестроительные работы – собственно возведение зданий
+									</h4>
+								</div>
+								<div class="construction-inner__items">
+									<ul class="construction-inner__list">
+										<li class="construction-inner__item">
+											<p>Свайные</p>
+										</li>
+										<li class="construction-inner__item">
+											<p>Каменные</p>
+										</li>
+										<li class="construction-inner__item">
+											<p>Земляные</p>
+										</li>
+										<li class="construction-inner__item">
+											<p>Монтажные</p>
+										</li>
+										<li class="construction-inner__item">
+											<p>Железобетонные</p>
+										</li>
+										<li class="construction-inner__item">
+											<p>Бетонные</p>
+										</li>
+										<li class="construction-inner__item">
+											<p>Кровельные и другие виды работ</p>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<!-- start _contact-form -->
+				<!-- @@include('html/blocks/_contact-form.htm',{}) -->
+				<!-- end _contact-form -->
+			</main>
+			<!-- @@include('html/_footer.htm',{}) -->
+		</div>
+		@@include('html/_popup-send.htm',{})
+		@@include('html/_js.htm',{})
+	</body>
+</html>
