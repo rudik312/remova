@@ -1,11 +1,26 @@
 //.contact-form
 .contact-form {
-  margin-top: 70px;
-  background-image: url(../img/contact-form/bg-contact-form.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   background-color: #070707;
+  @media (max-width:$tablet){
+    background-size: 120%;
+    background-position: 0 0;
+  }
+  @media (max-width:$mobile){
+    background-size: 160%;
+  }
+  @media (max-width: em(620)){
+    background-size: 230%;
+    background-position: -60px 30px;
+  }
+  @media (max-width:$mobileSmall){
+    background-position: -40px 10px;
+  }
+  @media (max-width: em(420)){
+    background-position: 0 30px;
+  }
   // .contact-form__container
   &__container {
     padding-top: 75px;
