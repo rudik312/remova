@@ -5,10 +5,10 @@
 	})
 	<body>
 		<div class="wrapper">
-			@@include('html/_header.htm',{})
+			<!-- @@include('html/_header.htm',{}) -->
 			<main class="page">
 				<!-- start breadcrumbs-section breadcrumbs -->
-				<section class="breadcrumbs-section breadcrumbs">
+				<!-- <section class="breadcrumbs-section breadcrumbs">
 					<div class="breadcrumbs__container">
 						<ul class="breadcrumbs__list">
 							<li class="breadcrumbs__item">
@@ -23,7 +23,7 @@
 							</li>
 						</ul>
 					</div>
-				</section>
+				</section> -->
 				<!-- end breadcrumbs-section breadcrumbs -->
 				<!-- start about -->
 				<!-- <section class="about" style="background-image: url(../img/page-about/about-bg.jpg);">
@@ -63,7 +63,7 @@
 				</section> -->
 				<!-- end about -->
 				<!-- start benefit -->
-				<section class="benefit">
+				<!-- <section class="benefit">
 					<div class="benefit__container">
 						<div class="benefit__inner">
 							<div class="benefit__items">
@@ -142,9 +142,9 @@
 							</div>
 						</div>
 					</div>
-				</section>
+				</section> -->
 				<!-- end benefit -->
-
+				<!-- start licenses -->
 				<section class="licenses">
 					<div class="licenses__container">
 						<div class="licenses__inner">
@@ -164,7 +164,7 @@
 										<img src="@img/page-about/license-3.jpg" alt="license">
 									</div>
 								</div>
-								<div class="licenses__info">
+								<div class="licenses__info" data-da=".licenses__inner, 420">
 									<div class="licenses__title title">
 										<h2>Лицензии и допуски</h2>
 									</div>
@@ -178,12 +178,12 @@
 						</div>
 					</div>
 				</section>
-				
+				<!-- end licenses -->
 				<!-- start _contact-form -->
-				<!-- @@include('html/blocks/_contact-form.htm',{}) -->
+				@@include('html/blocks/_contact-form.htm',{})
 				<!-- end _contact-form -->
 			</main>
-			<!-- @@include('html/_footer.htm',{}) -->
+			@@include('html/_footer.htm',{})
 		</div>
 		@@include('html/_popup-send.htm',{})
 		@@include('html/_js.htm',{})

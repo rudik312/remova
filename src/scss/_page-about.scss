@@ -293,9 +293,11 @@
 //.licenses
 //========================================================================================================================================================
 .licenses {
+  padding-bottom: 65px;
   // .licenses__container
   &__container {
     padding-top: 60px;
+    padding-bottom: 65px;
   }
   // .licenses__inner
   &__inner {
@@ -303,16 +305,60 @@
     // display: grid;
     // grid-template-columns: 1.5fr 0.5fr;
     // column-gap: 62px;
+    @media (max-width: em(420)){
+      display: flex;
+      flex-direction: column;
+      row-gap: 10px;
+    }
   }
   //.licenses__items
   &__items {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     column-gap: 20px;
+    @media (max-width:$tablet){
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: 2fr auto;
+      row-gap: 20px;
+    }
+    @media (max-width: em(420)){
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(3, 1fr);
+      row-gap: 10px;
+    }
   }
   // .licenses__item
   &__item {
     padding-top: 10px;
+    @media (max-width:$tablet){
+      padding-top: 0;
+      &:nth-child(1) {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+        @media (max-width: em(420)){
+          // grid-column: 1 / 2;
+        }
+      }
+      &:nth-child(2) {
+        grid-column: 2 / 3;
+        grid-row: 2;
+        @media (max-width: em(420)){
+          grid-column: 1 / 2;
+          grid-row: 3 / 4;
+        }
+      }
+      &:nth-child(3) {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+        @media (max-width: em(420)){
+          grid-column: 1 / 2;
+        }
+      }
+    }
+
+    &:nth-child(4) {
+      
+    }
   }
   // .licenses__img-ibg
   &__img-ibg {
@@ -325,7 +371,6 @@
   // .licenses__info
   &__info {
     position: relative;
-    // max-width: 240px;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -356,9 +401,17 @@
       max-width: 150px;
       row-gap: 20px;
     }
+    @media (max-width:$tablet){
+      max-width: 100%;
+      grid-column: 2 / 3;
+    }
     @media (max-width: em(720)){
       max-width: 100%;
       row-gap: 10px;
+    }
+    @media (max-width: em(420)){
+      // grid-column: 1 / 2;
+      order: -1;
     }
   }
   // .licenses__title
