@@ -121,13 +121,27 @@ $white: #ffffff;
 
 .item-dots {
   position: relative;
-  width: 9px;
-  height: 9px;
-  background-color: #F7912C;
   &::before{
     content:'';
     position: absolute;
-
+    width: 9px;
+    height: 9px;
+    background-color: #F7912C;
+    border-radius: 50%;
+    left: -28px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  &::after{
+    content:'';
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background-color: #000;
+    border-radius: 50%;
+    left: -26px;
+    top: 50%;
+    transform: translateY(-50%);
   }
 }
 
