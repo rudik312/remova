@@ -2,6 +2,8 @@
 //.construction
 //========================================================================================================================================================
 .construction {
+  padding-left: max(15px, calc((100% - 1170px) / 2));
+  padding-right: max(15px, calc((100% - 1440px) / 2));
   // .construction__wrapper
   &__wrapper {
     padding-top: 40px;
@@ -9,8 +11,7 @@
     display: flex;
     flex-direction: column;
     row-gap: 35px;
-    padding-left: max(15px, calc((100% - 1170px) / 2));
-    padding-right: max(15px, calc((100% - 1440px) / 2));
+
   }
   // .construction__heading
   &__heading {
@@ -109,26 +110,25 @@
 //========================================================================================================================================================
 .finishes {
   padding-top: 60px;
-  padding-bottom: 60px;
+  padding-bottom: 75px;
+  padding-right: max(15px, calc((100% - 1170px) / 2));
+  padding-left: max(15px, calc((100% - 1440px) / 2));
   // .finishes__wrapper
   &__wrapper {
     padding-top: 175px;
     padding-bottom: 175px;
-    padding-right: max(15px, calc((100% - 1170px) / 2));
-    padding-left: max(15px, calc((100% - 1440px) / 2));
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     row-gap: 45px;
-    background-image: url(../img/page-service/finishes-bg.png);
     background-repeat: no-repeat;
     background-size: contain;
     // background-position: max(15px, calc((100% - 1170px) / 2));
-    background-position: center;
+    // background-position: center;
   }
   //.finishes__content
   &__content {
-    min-height: 450px;
+    // min-height: 450px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -166,6 +166,82 @@
   &__item {
   }
 }
-.construction {
+//========================================================================================================================================================
 
+//.reconstruction
+//========================================================================================================================================================
+.reconstruction {
+  padding-left: max(15px, calc((100% - 1170px) / 2));
+  padding-right: max(15px, calc((100% - 1440px) / 2));
+  padding-top: 75px;
+  padding-bottom: 45px;
+  // .reconstruction__wrapper
+  &__wrapper {
+    padding-bottom: 22px;
+
+    background-image: url(../img/page-service/reconstruction-bg.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+  // .reconstruction__content
+  &__content {
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+  }
+  // .reconstruction__box
+  &__box {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+  }
+  // .reconstruction__title
+  &__title {
+    @extend %title;
+  }
+  // .reconstruction__title-logo
+  &__title-logo {
+    img {
+      width: 41px;
+      height: 53px;
+    }
+  }
+  // .reconstruction__inner
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    row-gap: 60px;
+    color: $white;
+  }
+  // .reconstruction__info
+  &__info {
+    max-width: 580px;
+    @extend %poir-400;
+    font-size: rem(20);
+    line-height: math.div(19 , 20);
+  }
+  // .reconstruction__items
+  &__items {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    @extend %poir-400;
+    font-size: rem(20);
+    line-height: math.div(19 , 20);
+    color: $white;
+  }
+  // .reconstruction__item
+  &__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 480px;
+    padding: 32px;
+    border-radius: 9px;
+    background: rgba(116, 113, 113, 0.10);
+    box-shadow: 1px 1px 7px -4px rgba(6, 6, 6, 0.31) inset, 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(7.5px);
+  }
 }
+
