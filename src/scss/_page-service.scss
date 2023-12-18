@@ -560,7 +560,7 @@
   &__box {
     max-width: 453px;
     display: flex;
-    align-items: center;
+    // align-items: center;
     column-gap: 20px;
     @media (max-width:$tablet){
       max-width: 100%;
@@ -573,6 +573,12 @@
   // .heating__title
   &__title {
     @extend %title;
+    @media (max-width: em(560)){
+      max-width: 266px;
+    }
+    @media (max-width:$mobileSmall){
+      max-width: 100%;
+    }
     @media (max-width: em(380)){
       max-width: 180px;
     }
