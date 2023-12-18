@@ -140,7 +140,7 @@
 				</section>
 				<!-- end finishes -->
 				<!-- start reconstruction -->
-				<!-- <section class="reconstruction">
+				<section class="reconstruction">
 					<div class="reconstruction__wrapper" style="background-image: url(../img/page-service/reconstruction-bg.png);">
 						<div class="reconstruction__content">
 							<div class="reconstruction__box">
@@ -171,11 +171,14 @@
 							</div>
 						</div>
 					</div>
-				</section> -->
+				</section>
 				<!-- end reconstruction -->
 				<!-- start heating -->
-				<!-- <section class="heating">
-					<div class="heating__wrapper" style="background-image: url(../img/page-service/heating-bg.png);">
+				<section class="heating">
+					<div class="heating__wrapper">
+						<div class="heating__bg">
+							<img src="@img/page-service/heating-bg.png" alt="">
+						</div>
 						<div class="heating__content">
 							<div class="heating__box">
 								<h3 class="heating__title">Нагревание, вентиляция и кондиционирование</h3>
@@ -206,10 +209,10 @@
 							</div>
 						</div>
 					</div>
-				</section> -->
+				</section>
 				<!-- end heating -->
 				<!-- start experts -->
-				<!-- <section class="experts">
+				<section class="experts">
 					<div class="experts__wrapper" style="background-image: url(../img/page-service/experts-bg.png);">
 						<div class="experts__content">
 							<div class="experts__box">
@@ -264,13 +267,13 @@
 							</div>
 						</div>
 					</div>
-				</section> -->
+				</section>
 				<!-- end experts -->
 				<!-- start _contact-form -->
-				<!-- @@include('html/blocks/_contact-form.htm',{}) -->
+				@@include('html/blocks/_contact-form.htm',{})
 				<!-- end _contact-form -->
 			</main>
-			<!-- @@include('html/_footer.htm',{}) -->
+			@@include('html/_footer.htm',{})
 		</div>
 		@@include('html/_popup-send.htm',{})
 		@@include('html/_js.htm',{})
