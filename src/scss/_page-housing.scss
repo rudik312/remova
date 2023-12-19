@@ -1,0 +1,141 @@
+
+.housing {
+  // .housing__container
+  &__wrapper {
+    padding-left: max(15px, calc((100% - 1170px) / 2));
+    padding-right: max(15px, calc((100% - 1440px) / 2));
+    display: flex;
+    flex-direction: column;
+    row-gap: 80px;
+  }
+  // .housing__heading
+  &__heading {
+    @extend %heading;
+  }
+  // .housing__box
+  &__box {
+    @extend %hbox;
+  }
+  // .housing__title
+  &__title {
+    @extend %title;
+  }
+  // .housing__title-logo
+  &__title-logo {
+    @extend %title-logo;
+  }
+  // .housing__subtitle
+  &__subtitle {
+    max-width: 980px;
+    @extend %text;
+  }
+  // .housing__technology
+  &__technology {
+    display: flex;
+    flex-direction: column;
+    row-gap: 43px;
+  }
+}
+.housing-technology {
+  // .housing-technology__heading
+  &__heading {
+    display: flex;
+    flex-direction: column;
+    row-gap: 43px;
+  }
+  // .housing-technology__title
+  &__title {
+    @extend %poir-400;
+    font-size: rem(20);
+    line-height: math.div(19 , 20);
+    color: $accent;
+    @media (max-width:$mobileSmall){
+      font-size: rem(15);
+      line-height: math.div(14 , 15);
+    }
+  }
+  // .housing-technology__subtitle
+  &__subtitle {
+    max-width: 980px;
+    @extend %text;
+  }
+  //.housing-technology__inner
+  &__inner {
+    display: flex;
+    align-items: center;
+  }
+  // .housing-technology__items
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 20px;
+    row-gap: 13px;
+    color: $white;
+  }
+  // .housing-technology__item
+  &__item {
+    padding: 32px 18px 32px 51px;
+    display: flex;
+    align-items: center;
+    border-radius: 9px;
+    background: rgba(116, 113, 113, 0.10);
+    box-shadow: 1px 1px 7px -4px rgba(6, 6, 6, 0.31) inset, 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(7.5px);
+  }
+  // .housing-technology__img
+  &__img {
+  }
+  // .housing-technology__text
+  &__text {
+  }
+  // .housing-technology__info
+  &__info {
+    max-width: 980px;
+    @extend %text;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// .housing-technology__img {
+//   width: 81px;
+//   height: 81px;
+//   background-color: #fff;
+//   border-radius: 50%;
+//   background: #26272C;
+//   filter: drop-shadow(-3px -4px 10.3px rgba(255, 255, 255, 0.25)) drop-shadow(3px 5px 10.6px rgba(0, 0, 0, 0.92));
+// }
