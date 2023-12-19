@@ -69,52 +69,58 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 20px;
-    row-gap: 13px;
+    row-gap: 20px;
     color: $white;
   }
   // .housing-technology__item
   &__item {
-    padding: 32px 18px 32px 51px;
+    max-width: 450px;
+    position: relative;
+    padding: 30px 18px 30px 109px;
     display: flex;
     align-items: center;
     border-radius: 9px;
+    border-top-left-radius: 180px;
+    border-bottom-left-radius: 180px;
     background: rgba(116, 113, 113, 0.10);
     box-shadow: 1px 1px 7px -4px rgba(6, 6, 6, 0.31) inset, 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     backdrop-filter: blur(7.5px);
+    @extend %poir-400;
+    font-size: rem(20);
+    line-height: math.div(19 , 20);
+    @media (max-width:$tablet){
+      font-size: rem(15);
+      line-height: math.div(14 , 15);
+    }
+    @media (max-width:$mobileSmall){
+      font-size: rem(11);
+      line-height: math.div(11 , 11);
+    }
   }
   // .housing-technology__img
   &__img {
+    position: absolute;
+    width: 81px;
+    height: 81px;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #26272C;
+    filter: drop-shadow(-3px -4px 10.3px rgba(255, 255, 255, 0.25)) drop-shadow(3px 5px 10.6px rgba(0, 0, 0, 0.92));
   }
   // .housing-technology__text
   &__text {
   }
   // .housing-technology__info
   &__info {
-    max-width: 980px;
+    max-width: 990px;
     @extend %text;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
