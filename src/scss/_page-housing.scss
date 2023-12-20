@@ -8,7 +8,6 @@
     display: flex;
     flex-direction: column;
     row-gap: 80px;
-    background-image: url(../img/page-housing/housing-bg.jpg);
     background-position: right;
     background-repeat: no-repeat;
     background-size: contain;
@@ -215,6 +214,45 @@
       grid-template-columns: repeat(2, minmax(320px, 480px));
       column-gap: 20px;
     }
+  }
+}
+//========================================================================================================================================================
+
+
+//========================================================================================================================================================
+.housing-content {
+  // .housing-content__container
+  &__container {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  // .housing-content__items
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 20px;
+    column-gap: 20px;
+  }
+  // .housing-content__item
+  &__item {
+    padding: 80px 44px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    border-radius: 9px;
+    background-size: cover;
+    background-position: center;
+    @extend %text;
+  }
+  // .housing-content__title
+  &__title {
+    color: $accent;
+  }
+  // .housing-content__text
+  &__text {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
   }
 }
 
