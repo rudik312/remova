@@ -154,6 +154,9 @@ $white: #ffffff;
   @media (max-width:$tablet){
     row-gap: 20px;
   }
+  @media (max-width:$mobileSmall){
+    row-gap: 10px;
+  }
 }
 
 %title-logo {
