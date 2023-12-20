@@ -1,16 +1,21 @@
 
 .housing {
+  padding-left: max(15px, calc((100% - 1170px) / 2));
+  padding-right: max(15px, calc((100% - 1440px) / 2));
   // .housing__container
   &__wrapper {
     padding-bottom: 50px;
     display: flex;
     flex-direction: column;
     row-gap: 80px;
-    padding-left: max(15px, calc((100% - 1170px) / 2));
-    padding-right: max(15px, calc((100% - 1440px) / 2));
+    background-image: url(../img/page-housing/housing-bg.jpg);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
   }
   // .housing__heading
   &__heading {
+    
     @extend %heading;
   }
   // .housing__box
@@ -207,7 +212,7 @@
   &:first-child{
     .feature-items__wrapper {
       display: grid;
-      grid-template-columns: minmax(320px, 480px) minmax(320px, 480px);
+      grid-template-columns: repeat(2, minmax(320px, 480px));
       column-gap: 20px;
     }
   }
