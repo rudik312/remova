@@ -375,16 +375,25 @@
 //.housing-info
 //========================================================================================================================================================
 .housing-info {
+  padding-top: 50px;
+  padding-bottom: 120px;
   padding-left: max(15px, calc((100% - 1170px) / 2));
   padding-right: max(15px, calc((100% - 1440px) / 2));
-  padding-bottom: 100px;
   // .housing-info__wrapper
   &__wrapper {
-
     background-image: url(../img/page-housing/info-bg.jpg);
     background-size: contain;
     background-position: right;
     background-repeat: no-repeat;
+    @media (max-width:$tablet){
+      // padding-bottom: 280px;
+      @include adaptiveValue("padding-bottom", 280, 100, 1000, 620, 1);
+      background-position: bottom;
+    }
+    @media (max-width: em(620)){
+      padding-bottom: 0;
+      background-image: none;
+    }
   }
   // .housing-info__text
   &__text {
@@ -393,6 +402,10 @@
     flex-direction: column;
     row-gap: 20px;
     @extend %text;
+  }
+  @media (max-width:$tablet){
+    padding-top: 20px;
+    padding-bottom: 70px;
   }
 }
 //========================================================================================================================================================
