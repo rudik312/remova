@@ -175,9 +175,6 @@
       left: -27px;
     }
   }
-  // .housing-technology__text
-  &__text {
-  }
   // .housing-technology__info
   &__info {
     max-width: 990px;
@@ -392,7 +389,7 @@
     }
     @media (max-width: em(620)){
       padding-bottom: 0;
-      background-image: none;
+      background-image: none !important;
     }
   }
   // .housing-info__text
