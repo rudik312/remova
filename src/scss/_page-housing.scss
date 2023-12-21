@@ -4,7 +4,7 @@
   padding-bottom: 50px;
   padding-left: max(15px, calc((100% - 1170px) / 2));
   padding-right: max(15px, calc((100% - 1440px) / 2));
-  // .housing__container
+  // .housing__wrapper
   &__wrapper {
     display: flex;
     flex-direction: column;
@@ -14,6 +14,9 @@
     background-size: contain;
     @media (max-width:$tablet){
       row-gap: 20px;
+    }
+    @media (max-width:$mobileSmall){
+      row-gap: 10px;
     }
   }
   // .housing__heading
@@ -52,6 +55,9 @@
   @media (max-width:$tablet){
     padding-top: 15px;
   }
+  @media (max-width:$mobileSmall){
+    padding-bottom: 20px;
+  }
 }
 .housing-technology {
   // .housing-technology__heading
@@ -61,6 +67,9 @@
     row-gap: 45px;
     @media (max-width:$tablet){
       row-gap: 20px;
+    }
+    @media (max-width:$mobileSmall){
+      row-gap: 10px;
     }
   }
   // .housing-technology__title
@@ -181,6 +190,10 @@
       padding-top: 20px;
       row-gap: 20px;
     }
+    @media (max-width:$mobileSmall){
+      padding-top: 10px;
+      row-gap: 10px;
+    }
   }
 }
 .housing-feature {
@@ -203,12 +216,15 @@
   &__subtitle {
     @extend %text;
   }
-  //.housing-technology__inner
+  //.housing-feature__inner
   &__inner {
     @media (max-width:$tablet){
       display: flex;
       flex-direction: column;
       row-gap: 20px;
+    }
+    @media (max-width:$mobileSmall){
+      row-gap: 10px;
     }
   }
   // .housing-feature__items
@@ -262,7 +278,9 @@
     flex-direction: column;
     align-self: stretch;
     row-gap: 13px;
-    
+    @media (max-width:$mobileSmall){
+      row-gap: 10px;
+    }
   }
   &:first-child{
     .feature-items__wrapper {
