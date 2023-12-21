@@ -45,6 +45,9 @@
     @media (max-width:$tablet){
       row-gap: 20px;
     }
+    @media (max-width:$mobileSmall){
+      row-gap: 10px;
+    }
   }
   @media (max-width:$tablet){
     padding-top: 15px;
@@ -93,6 +96,14 @@
       padding-left: 27px;
       column-gap: 48px;
     }
+    @media (max-width: em(620)){
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+    @media (max-width:$mobileSmall){
+      row-gap: 10px;
+    }
   }
   // .housing-technology__item
   &__item {
@@ -102,7 +113,6 @@
     padding: 23px 18px 23px 70px;
     display: flex;
     align-items: center;
-    
     border-radius: 9px;
     background: rgba(116, 113, 113, 0.10);
     box-shadow: 1px 1px 7px -4px rgba(6, 6, 6, 0.31) inset, 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
@@ -116,6 +126,9 @@
       min-height: 54px;
       font-size: rem(15);
       line-height: math.div(14 , 15);
+    }
+    @media (max-width: em(620)){
+      max-width: 100%;
     }
     @media (max-width:$mobileSmall){
       font-size: rem(11);
@@ -225,8 +238,12 @@
     color: $white;
     text-align: center;
     @media (max-width:$tablet){
+      padding: 22px 30px;
       font-size: rem(15);
       line-height: math.div(14 , 15);
+    }
+    @media (max-width: em(620)){
+      max-width: 100%;
     }
     @media (max-width:$mobileSmall){
       font-size: rem(11);
@@ -252,6 +269,13 @@
       display: grid;
       grid-template-columns: repeat(2, minmax(280px, 480px));
       column-gap: 20px;
+      @media (max-width: em(620)){
+        display: flex;
+        flex-direction: column;
+      }
+      @media (max-width:$mobileSmall){
+        row-gap: 10px;
+      }
     }
   }
 }

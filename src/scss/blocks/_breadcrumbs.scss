@@ -35,7 +35,7 @@
       top: 10px;
       right: 22px;
       // transform: rotate(0deg);
-      @media (max-width: em(420)){
+      @media (max-width:$mobileSmall){
         top: 8px;
         // height: 5px; 
         // width: 1px;     
@@ -70,12 +70,16 @@
       }
     }
     @media (max-width: em(420)){
+      
+    }
+    @media (max-width:$mobileSmall){
       font-size: rem(11);
-      padding-right: 55px;
+      padding-right: 50px;
     }
   }
   // .breadcrumbs__link
   &__link {
+    white-space: nowrap;
     // @extend %poir-400;
     // font-size: rem(16);
     // line-height: 120%;
