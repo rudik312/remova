@@ -1,12 +1,12 @@
 
-//.housing
+//.industrial
 //========================================================================================================================================================
-.housing {
+.industrial {
   padding-top: 45px;
   padding-bottom: 50px;
   padding-left: max(15px, calc((100% - 1170px) / 2));
   padding-right: max(15px, calc((100% - 1440px) / 2));
-  // .housing__wrapper
+  // .industrial__wrapper
   &__wrapper {
     display: flex;
     flex-direction: column;
@@ -24,29 +24,38 @@
       row-gap: 10px;
     }
   }
-  // .housing__heading
+  // .industrial__heading
   &__heading {
     @extend %heading;
   }
-  // .housing__box
+  // .industrial__box
   &__box {
     @extend %hbox;
   }
-  // .housing__title
+  // .industrial__title
   &__title {
     @extend %title;
   }
-  // .housing__title-logo
+  // .industrial__title-logo
   &__title-logo {
     @extend %title-logo;
   }
-  // .housing__text
+  // .industrial__text
   &__text {
     max-width: 980px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
     @extend %text;
+    @media (max-width:$tablet){
+      row-gap: 20px;
+    }
+    @media (max-width:$mobileSmall){
+      row-gap: 10px;
+    }
   }
-  // .housing__technology
-  &__technology {
+  // .industrial__building
+  &__building {
     display: flex;
     flex-direction: column;
     row-gap: 43px;
@@ -64,8 +73,9 @@
     padding-bottom: 20px;
   }
 }
-.housing-technology {
-  // .housing-technology__heading
+
+.industrial-building {
+  // .industrial-building__heading
   &__heading {
     display: flex;
     flex-direction: column;
@@ -77,7 +87,7 @@
       row-gap: 10px;
     }
   }
-  // .housing-technology__title
+  // .industrial-building__title
   &__title {
     @extend %poir-400;
     font-size: rem(20);
@@ -88,24 +98,24 @@
       line-height: math.div(14 , 15);
     }
   }
-  // .housing-technology__subtitle
+  // .industrial-building__subtitle
   &__subtitle {
-    max-width: 980px;
+    max-width: 1180px;
     @extend %text;
   }
-  //.housing-technology__inner
+  //.industrial-building__inner
   &__inner {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
   }
-  // .housing-technology__items
+  // .industrial-building__items
   &__items {
     padding-left: 41px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    column-gap: 61px;
-    row-gap: 17px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
     @media (max-width:$tablet){
       padding-left: 27px;
       // column-gap: 48px;
@@ -120,10 +130,11 @@
       row-gap: 10px;
     }
   }
-  // .housing-technology__item
+  // .industrial-building__item
   &__item {
     position: relative;
-    max-width: 450px;
+    max-width: 1050px;
+
     min-height: 84px;
     padding: 23px 18px 23px 70px;
     display: flex;
@@ -150,7 +161,7 @@
       line-height: math.div(11 , 11);
     }
   }
-  // .housing-technology__img
+  // .industrial-building__img
   &__img {
     position: absolute;
     width: 81px;
@@ -176,15 +187,10 @@
       left: -27px;
     }
   }
-  // .housing-technology__info
-  &__info {
-    max-width: 990px;
-    @extend %text;
-  }
 }
 
-.housing {
-  // .housing__feature
+.industrial {
+  // .industrial__feature
   &__feature {
     display: flex;
     flex-direction: column;
@@ -199,12 +205,20 @@
     }
   }
 }
-.housing-feature {
-  // .housing-feature__heading
+.industrial-feature {
+  // .industrial-feature__heading
   &__heading {
-    @extend %heading;
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+    @media (max-width:$tablet){
+      row-gap: 20px;
+    }
+    @media (max-width:$mobileSmall){
+      row-gap: 10px;
+    }
   }
-  // .housing-feature__title
+  // .industrial-feature__title
   &__title {
     @extend %poir-400;
     font-size: rem(20);
@@ -215,11 +229,11 @@
       line-height: math.div(14 , 15);
     }
   }
-  // .housing-feature__subtitle
+  // .industrial-feature__subtitle
   &__subtitle {
     @extend %text;
   }
-  //.housing-feature__inner
+  //.industrial-feature__inner
   &__inner {
     @media (max-width:$tablet){
       display: flex;
@@ -230,22 +244,24 @@
       row-gap: 10px;
     }
   }
-  // .housing-feature__items
+  // .industrial-feature__items
   &__items {
     margin-bottom: 40px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    
     @media (max-width:$tablet){
       margin-bottom: 0;
     }
   }
-  // .housing-feature__item
+  // .industrial-feature__item
   &__item {
-    max-width: 480px;
-    padding: 32px 30px;
+    max-width: 1050px;
+    height: 84px;
+    // height: 100%;
+    padding: 32px 20px;
     display: flex;
-    justify-content: center;
     align-items: center;
     background-color: rgba(116, 113, 113, 0.10);
     box-shadow: 1px 1px 7px -4px rgba(6, 6, 6, 0.31) inset, 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
@@ -255,7 +271,7 @@
     font-size: rem(20);
     line-height: math.div(19 , 20);
     color: $white;
-    text-align: center;
+    text-align: left;
     @media (max-width:$tablet){
       padding: 22px 30px;
       font-size: rem(15);
@@ -269,7 +285,7 @@
       line-height: math.div(11 , 11);
     }
   }
-  //.housing-feature__text
+  //.industrial-feature__text
   &__text {
     @extend %text;
   }
@@ -280,7 +296,10 @@
     display: flex;
     flex-direction: column;
     align-self: stretch;
-    row-gap: 13px;
+    row-gap: 20px;
+    @media (max-width:$tablet){
+      row-gap: 15px;
+    }
     @media (max-width:$mobileSmall){
       row-gap: 10px;
     }
@@ -302,10 +321,10 @@
 }
 //========================================================================================================================================================
 
-//.housing-content
+//.industrial-content
 //========================================================================================================================================================
-.housing-content {
-  // .housing-content__container
+.industrial-content {
+  // .industrial-content__container
   &__container {
     padding-top: 50px;
     padding-bottom: 50px;
@@ -316,7 +335,7 @@
       padding-top: 20px;
     }
   }
-  // .housing-content__items
+  // .industrial-content__items
   &__items {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -330,7 +349,7 @@
       row-gap: 10px;
     }
   }
-  // .housing-content__item
+  // .industrial-content__item
   &__item {
     padding: 80px 44px;
     display: flex;
@@ -351,11 +370,11 @@
       line-height: math.div(11 , 11);
     }
   }
-  // .housing-content__title
+  // .industrial-content__title
   &__title {
     color: $accent;
   }
-  // .housing-content__text
+  // .industrial-content__text
   &__text {
     display: flex;
     flex-direction: column;
@@ -370,15 +389,16 @@
 }
 //========================================================================================================================================================
 
-//.housing-info
+//.industrial-info
 //========================================================================================================================================================
-.housing-info {
+.industrial-info {
   padding-top: 50px;
   padding-bottom: 120px;
   padding-left: max(15px, calc((100% - 1170px) / 2));
   padding-right: max(15px, calc((100% - 1440px) / 2));
-  // .housing-info__wrapper
+  // .industrial-info__wrapper
   &__wrapper {
+    
     background-size: contain;
     background-position: right;
     background-repeat: no-repeat;
@@ -391,7 +411,7 @@
       background-image: none !important;
     }
   }
-  // .housing-info__text
+  // .industrial-info__text
   &__text {
     max-width: 780px;
     display: flex;
