@@ -322,6 +322,9 @@
       font-size: rem(15);
       line-height: math.div(14 , 15);
     }
+    @media (max-width: em(680)){
+      padding: 5px 18px 5px 45px;
+    }
     @media (max-width: em(620)){
       max-width: 100%;
     }
@@ -354,6 +357,16 @@
       width: 54px;
       height: 54px;
       left: -27px;
+    }
+
+    //change size image for adaptive
+    @media (max-width: em(680)){
+      width: 61px;
+      height: 61px;
+    }
+    @media (max-width:$mobileSmall){
+      width: 54px;
+      height: 54px;
     }
   }
 }
@@ -574,6 +587,9 @@
       min-height: 54px;
       font-size: rem(15);
       line-height: math.div(14 , 15);
+    }
+    @media (max-width: em(680)){
+      padding: 5px 18px 5px 45px;
     }
     @media (max-width: em(620)){
       max-width: 100%;
