@@ -141,7 +141,15 @@
     grid-template-rows: 1fr auto;
     column-gap: 20px;
     row-gap: 20px;
-
+    @media (max-width:$tablet){
+      padding-bottom: 0;
+      display: flex;
+      flex-direction: column;
+      row-gap: 20px;
+    }
+    @media (max-width:$mobileSmall){
+      row-gap: 10px;
+    }
   }
   // .industrial-types__inner
   &__inner {
@@ -156,6 +164,14 @@
     &:nth-child(3) {
       grid-column: span 2;
       
+    }
+    @media (max-width:$tablet){
+      padding: 30px 20px;
+      row-gap: 20px;
+    }
+    @media (max-width:$mobileSmall){
+      padding: 15px;
+      row-gap: 15px;
     }
   }
 }
@@ -185,7 +201,7 @@
       row-gap: 13px;
     }
     @media (max-width:$mobileSmall){
-      row-gap: 20px;
+      row-gap: 10px;
       font-size: rem(11);
       line-height: math.div(11 , 11);
     }
@@ -613,7 +629,7 @@
     background-repeat: no-repeat;
     @media (max-width:$tablet){
       @include adaptiveValue("padding-bottom", 280, 100, 1000, 620, 1);
-      background-position: bottom;
+      background-position: right;
     }
     @media (max-width: em(620)){
       padding-bottom: 0;
