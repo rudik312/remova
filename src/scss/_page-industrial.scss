@@ -202,10 +202,20 @@
     }
     @media (max-width:$mobileSmall){
       row-gap: 10px;
+      padding-left: 20px;
       font-size: rem(11);
       line-height: math.div(11 , 11);
     }
-
+    @media (max-width:$mobileSmall){
+      .industrial-inner__item {
+        &::before{
+          left: -18px;
+        }
+        &::after{
+          left: -16px;
+        }
+      }
+    }
   }
   // .industrial-inner__item
   &__item {
@@ -216,9 +226,15 @@
       .industrial-inner__item {
         &::before{
           top: 10px;
+          @media (max-width:$mobileSmall){
+            top: 7px;
+          }
         }
         &::after{
           top: 10px;
+          @media (max-width:$mobileSmall){
+            top: 7px;
+          }
         }
       }
     }
