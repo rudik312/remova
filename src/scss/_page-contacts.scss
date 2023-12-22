@@ -5,8 +5,10 @@
   // .contacts__container
   &__container {
     padding-top: 85px;
+    padding-bottom: 170px;
     @media (max-width:$tablet){
       padding-top: 95px;
+      padding-bottom: 50px;
     }
     @media (max-width:$mobileSmall){
       padding-top: 35px;
@@ -14,12 +16,57 @@
   }
   // .contacts__inner
   &__inner {
+    position: relative;
     display: flex;
     flex-direction: column;
     row-gap: 60px;
     align-items: center;
     @media (max-width:$tablet){
       row-gap: 20px;
+    }
+    &::before{
+      content:'';
+      position: absolute;
+      background-image: url(../img/all/title-decor-left.jpg);
+      background-repeat: no-repeat;
+      width: 614px;
+      height: 339px;
+      left: -132px;
+      top: -10px;
+      z-index: -1;
+      @media (max-width:$tablet){
+        width: 404px;
+        height: 223px;
+        top: -100px;
+        left: -15px;
+      }
+      @media (max-width: em(740)){
+        width: 214px;
+        height: 119px;
+        top: -30px;
+      } 
+    }
+    &::after{
+      content:'';
+      position: absolute;
+      background-image: url(../img/all/title-decor-right.jpg);
+      background-repeat: no-repeat;
+      width: 614px;
+      height: 339px;
+      right: -130px;
+      top: 320px;
+      z-index: -1;
+      @media (max-width:$tablet){
+        width: 404px;
+        height: 223px;
+        top: 35px;
+        right: -15px;
+      }
+      @media (max-width: em(740)){
+        // width: 214px;
+        height: 119px;
+        top: 100px;
+      } 
     }
   }
   // .contacts__title
@@ -126,3 +173,45 @@
     }
   }
 }
+//========================================================================================================================================================
+
+//.map
+//========================================================================================================================================================
+.map {
+  // .map__container
+  &__container {
+    padding-top: 170px;
+    padding-bottom: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @media (max-width:$tablet){
+      padding-top: 50px;
+      padding-bottom: 20px;
+    }
+  }
+  // .map__wrapper
+  &__wrapper {
+    padding: 0 15px;
+    width: 980px;
+    height: 480px;
+    @media (max-width:$tablet){
+      width: 652px;
+      height: 360px;
+    }
+    @media (max-width:$mobile){
+      width: 500px;
+      height: 320px;
+    }
+    @media (max-width: em(540)){
+      width: 400px;
+      height: 320px;
+    } 
+    @media (max-width: em(420)){
+      width: 317px;
+      height: 260px;
+    } 
+  }
+}
+
+

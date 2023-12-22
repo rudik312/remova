@@ -9,7 +9,7 @@
     flex-direction: column;
     row-gap: 70px;
     @media (max-width:$tablet){
-      padding-top: 85px;
+      padding-top: 45px;
       padding-bottom: 50px;
       row-gap: 40px;
     }
@@ -29,6 +29,9 @@
       padding-top: 72px;
       flex-direction: column-reverse;
       row-gap: 40px;
+    }
+    @media (max-width:$mobileSmall){
+      padding-top: 30px;
     }
   }
   // .footer__contacts
