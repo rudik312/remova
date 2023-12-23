@@ -173,8 +173,8 @@
 //========================================================================================================================================================
 .location-architect {
   // .location-architect__container
-  &__container {
-  }
+  // &__container {
+  // }
   // .location-architect__items
   &__items {
     @media (max-width:$tablet){
@@ -215,8 +215,148 @@
 //   &__items {
 //   }
 // }
+//========================================================================================================================================================
+
+//.location-alia
+//========================================================================================================================================================
+.location-alia {
+  // .location-alia__container
+  // &__container {
+  // }
+  // .location-alia__items
+  &__items {
+    .location__item {
+      &:nth-child(13),
+      &:nth-child(14),
+      &:nth-child(15),
+      &:nth-child(16),
+      &:nth-child(17),
+      &:nth-child(18),
+      &:nth-child(19),
+      &:nth-child(20),
+      &:nth-child(21) {
+        .location__img-ibg {
+          padding-bottom: percent(490, 380);
+        }
+      }
+    }
+    @media (max-width:$tablet){
+      .location__item {
+        &:nth-child(3),
+        &:nth-child(6),
+        &:nth-child(9),
+        &:nth-child(12),
+        &:nth-child(15),
+        &:nth-child(18),
+        &:nth-child(21) {
+          display: none;
+        }
+      }
+    }
+    @media (max-width:$mobileSmall){
+      .location__item {
+        &:nth-child(2),
+        &:nth-child(5),
+        &:nth-child(8),
+        &:nth-child(11),
+        &:nth-child(14),
+        &:nth-child(17) {
+          display: none;
+        }
+      }
+    }
+  }
+}
+//========================================================================================================================================================
+
+//.location-bezhospital
+//========================================================================================================================================================
+.location-bezhospital {
+  // .location-bezhospital__container
+  // &__container {
+  // }
+  // .location-bezhospital__items
+  &__items {
+    @media (max-width:$tablet){
+      .location__item {
+        &:nth-child(3),
+        &:nth-child(6) {
+          display: none;
+        }
+      }
+    }
+    @media (max-width:$mobileSmall){
+      .location__item {
+        &:nth-child(2),
+        &:nth-child(5) {
+          display: none;
+        }
+      }
+    }
+  }
+}
+//========================================================================================================================================================
+
+//.location-smart-house
+//========================================================================================================================================================
+.location-smart-house {
+  // .location-smart-house__container
+  &__container {
+  }
+  // .location-smart-house__items
+  &__items {
+    @media (max-width:$tablet){
+      .location__item {
+        &:nth-child(3),
+        &:nth-child(6) {
+          display: none;
+        }
+      }
+    }
+    @media (max-width:$mobileSmall){
+      .location__item {
+        &:nth-child(2),
+        &:nth-child(5) {
+          display: none;
+        }
+      }
+    }
+  }
+}
+//========================================================================================================================================================
 
 //========================================================================================================================================================
+.location-amur-gas {
+  // .location-amur-gas__container
+  // &__container {
+  // }
+  // .location-amur-gas__items
+  &__items {
+    .location__item {
+      .location__img-ibg {
+        padding-bottom: percent(487, 380);
+      }
+    }
+    @media (max-width:$tablet){
+      .location__item {
+        &:nth-child(3),
+        &:nth-child(6) {
+          display: none;
+        }
+      }
+    }
+    @media (max-width:$mobileSmall){
+      .location__item {
+        &:nth-child(2),
+        &:nth-child(5) {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+
 
 
 
