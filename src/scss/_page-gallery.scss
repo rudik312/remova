@@ -1,5 +1,6 @@
-
-.gallery-title__adaptive {
+//.gallery-title--adaptive
+//========================================================================================================================================================
+.gallery-title--adaptive {
   display: none;
   @media (max-width:$tablet){
     padding-top: 10px;
@@ -20,17 +21,24 @@
       font-size: rem(16);
       line-height: math.div(15 , 16);
     }
+    @media (max-width: em(360)){
+      font-size: rem(14);
+      line-height: math.div(14 , 14);
+    }
     span {
       text-align: center;
       @media (max-width: em(570)){
         max-width: 320px;
       }
+      @media (max-width: em(360)){
+        max-width: 280px;
+      }
     }
   }
-
 }
-//========================================================================================================================================================
 
+//.location
+//========================================================================================================================================================
 .location {
 		// .location__container
 		&__container {
@@ -89,6 +97,9 @@
       @media (max-width:$tablet){
         grid-template-columns: repeat(2, 1fr);
       }
+      @media (max-width:$mobileSmall){
+        grid-template-columns: 1fr;
+      }
 		}
 		// .location__item
 		&__item {
@@ -105,8 +116,6 @@
       }
 		}
 }
-
-
 //========================================================================================================================================================
 
 //.location-sky
@@ -146,5 +155,54 @@
         }
       }
     }
+    @media (max-width:$mobileSmall){
+      .location__item {
+        &:nth-child(2),
+        &:nth-child(5),
+        &:nth-child(8),
+        &:nth-child(11) {
+          display: none;
+        }
+      }
+    }
   }
 }
+//========================================================================================================================================================
+
+//.location-architect
+//========================================================================================================================================================
+.location-architect {
+  // .location-architect__container
+  &__container {
+  }
+  // .location-architect__items
+  &__items {
+    @media (max-width:$tablet){
+      .location__item {
+        &:nth-child(1),
+        &:nth-child(4),
+        &:nth-child(7),
+        &:nth-child(10),
+        &:nth-child(13),
+        &:nth-child(16) {
+          display: none;
+        }
+      }
+    }
+    @media (max-width:$mobileSmall){
+      .location__item {
+        &:nth-child(3),
+        &:nth-child(6),
+        &:nth-child(9),
+        &:nth-child(12),
+        &:nth-child(15),
+        &:nth-child(18) {
+          display: none;
+        }
+      }
+    }
+  }
+}
+//========================================================================================================================================================
+
+
