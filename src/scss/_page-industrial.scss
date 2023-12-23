@@ -98,7 +98,6 @@
 //.industrial-types
 //========================================================================================================================================================
 .industrial-types {
-
   //.industrial-types__container
   &__container {
     margin: 0;
@@ -185,8 +184,7 @@
     }
   }
   // .industrial-inner__items
-  &__items {
-  }
+
   // .industrial-inner__list
   &__list {
     display: flex;
@@ -218,9 +216,7 @@
     }
   }
   // .industrial-inner__item
-  &__item {
-    
-  }
+
   &:nth-child(3) {
     .industrial-inner__list {
       .industrial-inner__item {
@@ -288,7 +284,6 @@
     row-gap: 20px;
     @media (max-width:$tablet){
       padding-left: 27px;
-      // column-gap: 48px;
       @include adaptiveValue("column-gap", 48, 40, 768, 620, 1);
     }
     @media (max-width: em(620)){
@@ -526,8 +521,7 @@
     }
   }
   // .industrial-advantages__heading
-  &__heading {
-  }
+
   // .industrial-advantages__title
   &__title {
     @extend %poir-400;
@@ -554,7 +548,6 @@
     row-gap: 20px;
     @media (max-width:$tablet){
       padding-left: 27px;
-      // column-gap: 48px;
       @include adaptiveValue("column-gap", 48, 40, 768, 620, 1);
     }
     @media (max-width: em(620)){
@@ -626,8 +619,7 @@
     }
   }
   // .industrial-advantages__text
-  &__text {
-  }
+
   @media (max-width:$tablet){
     padding-top: 20px;
   }
