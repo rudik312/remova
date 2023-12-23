@@ -153,6 +153,10 @@ body {
 @import "page-industrial";
 @import "page-contacts";
 
+//политика и соглашение
+@import "privacy-policy";
+@import "assenting";
+
 //Подключение отдельных блоков
 @import "blocks/contact-form";
 @import "blocks/breadcrumbs";
