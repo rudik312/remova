@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+	@@include('html/_head.htm',{
+	"title":"Контакты"
+	})
+	<body>
+		<div class="wrapper">
+			@@include('html/_header.htm',{})
+			<main class="page">
+				<!-- start breadcrumbs-section breadcrumbs -->
+				<section class="breadcrumbs-section breadcrumbs">
+					<div class="breadcrumbs__container">
+						<ul class="breadcrumbs__list">
+							<li class="breadcrumbs__item">
+								<a  class="breadcrumbs__link" href="./">
+									Главная
+								</a>
+							</li>
+							<li class="breadcrumbs__item">
+								<a  class="breadcrumbs__link" href="#">
+									Компания
+								</a>
+							</li>
+							<li class="breadcrumbs__item">
+								<a  class="breadcrumbs__link" href="#">
+									Рекомендательное письмо
+								</a>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<!-- end breadcrumbs-section breadcrumbs -->
+				<!-- start recomend -->
+				<section class="recomend">
+					<div class="recomend__container">
+						<div class="recomend__inner">
+							<div class="recomend__title">
+								<h3>Рекомендательное письмо</h3>
+							</div>
+							<div class="recomend__items">
+								<div class="recomend__item">
+									<div class="recomend__img-ibg">
+										<img src="@img/page-recomend/letter-1.jpg" alt="letter">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- end recomend -->
+			</main>
+			@@include('html/_footer.htm',{})
+		</div>
+		@@include('html/_js.htm',{})
+	</body>
+</html>

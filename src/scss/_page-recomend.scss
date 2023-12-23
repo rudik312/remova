@@ -1,0 +1,61 @@
+//.recomend
+//========================================================================================================================================================
+.recomend {
+  // .recomend__container
+  &__container {
+    padding-top: 85px;
+    padding-bottom: 30px;
+    @media (max-width:$tablet){
+      padding-top: 95px;
+    }
+    @media (max-width:$mobileSmall){
+      padding-top: 50px;
+    }
+  }
+  //.recomend__inner
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    row-gap: 60px;
+    @media (max-width:$tablet){
+      row-gap: 40px;
+    }
+    @media (max-width:$mobileSmall){
+      row-gap: 25px;
+    }
+  }
+  //.recomend__title
+  &__title {
+    @extend %poir-400;
+    font-size: rem(64);
+    line-height: math.div(60 , 64);
+    color: $accent;
+    text-align: center;
+    @media (max-width:$tablet){
+      font-size: rem(24);
+      line-height: math.div(23 , 24);
+    }
+    @media (max-width:$mobileSmall){
+      font-size: rem(20);
+      line-height: math.div(19 , 20);
+    }
+  }
+  // .recomend__inner
+  &__items {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+  }
+  // .recomend__item
+  &__item {
+    // min-width: 1180px;
+  }
+  // .recomend__img-ibg
+  &__img-ibg {
+    overflow: hidden;
+    padding-bottom: percent(1650, 1180);
+    img {
+      object-position: center;
+    }
+  }
+}
