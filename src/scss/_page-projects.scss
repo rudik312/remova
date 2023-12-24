@@ -1,0 +1,188 @@
+
+//.current-project
+//========================================================================================================================================================
+.current-project {
+  // .current-project__inner
+  &__container {
+    position: relative;
+    padding-top: 230px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+    // padding-left: max(15px, calc((100% - 1170px) / 2));
+    // padding-right: max(15px, calc((100% - 1440px) / 2));
+    background-color: #070707;
+    @media (max-width:$tablet){
+      padding-top: 70px;
+      padding-bottom: 25px;
+    }
+    @media (max-width: em(620)){
+      padding-top: 40px;
+      flex-direction: column;
+      row-gap: 10px;
+    }
+    &::before{
+      content:'';
+      position: absolute;
+      background-image: url(../img/all/title-decor-left.jpg);
+      left: -132px;
+      top: 100px;
+      width: 610px;
+      height: 339px;
+      @media (max-width:$tablet){
+        width: 404px;
+        height: 223px;
+        left: -15px;
+      }
+      @media (max-width: em(620)){
+        width: 353px;
+        height: 165px;
+        top: -50px;
+      }
+    }
+  }
+  // .current-project__title
+  &__title {
+    z-index: 5;
+    @extend %poir-400;
+    font-size: rem(32);
+    line-height: math.div(31 , 32);
+    color: $accent;
+    @media (max-width:$mobileSmall){
+      row-gap: 20px;
+    }
+
+  }
+  // .current-project__slider
+  &__slider {
+  }
+  // .current-project__wrapper
+  &__wrapper {
+    padding-bottom: 35px;
+  }
+  // .current-project__slide
+  &__slide {
+    max-width: 100%;
+  }
+  // .current-project__slide-item
+  &__slide-item {
+    display: flex;
+    flex-direction: column;
+    row-gap: 13px;
+    @media (max-width:$tablet){
+      row-gap: 10px;
+    }
+  }
+  //.current-project__slide-box
+  &__slide-box {
+    padding: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @extend %poir-400;
+    font-size: rem(20);
+    line-height: math.div(19 , 20);
+    color: $white;
+    @media (max-width: em(390)){
+      font-size: rem(11);
+      line-height: math.div(11 , 11);
+    }
+  }
+  //.current-project__slide-link
+  &__slide-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+    max-width: 190px;
+    text-align: center;
+    img {
+      width: 7px;
+      height: 12px;
+    }
+  }
+  // .current-project__img
+  &__img {
+    overflow: hidden;
+    // padding-bottom: percent(454, 380);
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  // .current-project__slide-descr
+  &__slide-descr {
+    display: flex;
+    justify-content: flex-end;
+    @extend %poir-400;
+    font-size: rem(20);
+    line-height: math.div(19 , 20);
+    color: $white;
+    text-align: right;
+    @media (max-width:$tablet){
+      font-size: rem(14);
+      line-height: math.div(14 , 14);
+    }
+    @media (max-width: em(620)){
+      font-size: rem(11);
+      line-height: math.div(11 , 11);
+    }
+  }
+  // .current-project__pagination
+  &__pagination {
+    position: relative;
+    // left: 177px;
+    display: flex;
+    justify-content: center;
+    column-gap: 6px;
+    // width: 100px;
+    width: auto !important;
+    bottom: 10%;
+    // .main-projects__pagination + .swiper-pagination-bullet
+    & .swiper-pagination-bullet {
+      border-radius: 50%;
+      width: 5px !important;
+      height: 5px !important;
+      background-color: #1E1E1E !important;
+    }
+    // .main-projects__pagination + .swiper-pagination-bullet-active
+    & .swiper-pagination-bullet-active {
+      border-radius: 50%;
+      width: 5px;
+      height: 5px;
+      background-color: $accent !important;
+    }
+
+    & .swiper-pagination-bullet-active-main {
+      width: 5px !important;
+      height: 5px !important;
+      background-color: #ffffff !important;
+    }
+    @media (max-width:$tablet){
+      left: 90px;
+      bottom: 11%;
+    }
+    @media (max-width:$mobile){
+      bottom: 14%;
+    }
+    @media (max-width: em(620)){
+      justify-content: center;
+      left: 0;
+      // margin: 0 auto;
+    }
+  }
+  @media (max-width:$tablet){
+    padding-top: 20px;
+  }
+}
+.current {
+}
+.swiper {
+}
+.swiper-wrapper {
+}
+.swiper-slide {
+}
+.swiper-pagination {
+}

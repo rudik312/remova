@@ -227,6 +227,9 @@ import "./libs/dynamic_adapt.js";
 // подключаем Swiper 11.0.5
 // import "./libs/swiper-bundle.min.js";
 
+
+import "./files/splide.js";
+
 import "./libs/jquery.min.js"
 
 import "./files/script.js";

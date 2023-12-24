@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru">
+	@@include('html/_head.htm',{
+	"title":"Проекты"
+	})
+	<body>
+		<div class="wrapper">
+			@@include('html/_header.htm',{})
+			<main class="page">
+				<!-- start breadcrumbs-section breadcrumbs -->
+				<section class="breadcrumbs-section breadcrumbs">
+					<div class="breadcrumbs__container">
+						<ul class="breadcrumbs__list">
+							<li class="breadcrumbs__item">
+								<a  class="breadcrumbs__link" href="./">
+									Главная
+								</a>
+							</li>
+							<li class="breadcrumbs__item">
+								<a  class="breadcrumbs__link" href="#">
+									Проекты
+								</a>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<!-- end breadcrumbs-section breadcrumbs -->
+
+				<section class="current-project current">
+					<div class="current-project__container">
+						<div class="current-project__title">
+							<h3>Текущие</h3>
+						</div>
+						<div class="current-project__slider swiper">
+							<div class="current-project__wrapper swiper-wrapper">
+								<div class="current-project__slide swiper-slide">
+									<div class="current-project__slide-item">
+										<div class="current-project__img">
+											<img src="@img/page-projects/current/skyview/1.jpg" alt="project">
+										</div>
+										<div class="current-project__slide-descr">
+											<p>Жилой комплекс SKYVIEW</p>
+										</div>
+									</div>
+								</div>
+								<div class="current-project__slide swiper-slide">
+									<div class="current-project__slide-item">
+										<div class="current-project__img">
+											<img src="@img/page-projects/current/architect/1.jpg" alt="project">
+										</div>
+										<div class="current-project__slide-descr">
+											<p>Жилой район ÁLIA</p>
+										</div>
+									</div>
+								</div>
+								<div class="current-project__slide swiper-slide">
+									<div class="current-project__slide-item">
+										<div class="current-project__img">
+											<img src="@img/page-projects/current/kuzminki/1.jpg" alt="project">
+										</div>
+										<div class="current-project__slide-descr">
+											<p>Жилой Комплекс «Архитектор»</p>
+										</div>
+									</div>
+								</div>
+								<div class="current-project__slide swiper-slide">
+									<div class="current-project__slide-item">
+										<div class="current-project__slide-box">
+											<a class="current-project__slide-link" href="#">
+												<p>Больше фото работ в галерее</p>
+												<img src="@img/all/arrow-right.svg" alt="arrow-right">
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="current-project__pagination swiper-pagination"></div>
+						</div>
+					</div>
+				</section>
+
+			</main>
+			@@include('html/_footer.htm',{})
+		</div>
+		@@include('html/_js.htm',{})
+	</body>
+</html>
