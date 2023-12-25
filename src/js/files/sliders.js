@@ -284,9 +284,9 @@ function initSliders() {
 			pagination: {
 				el: '.current-project__pagination',
 				clickable: true,
-				renderBullet: function (index, className) {                 //added
-					return `<span class="${className} current-project__bullet"></span>` //added
-			}, 
+			// 	renderBullet: function (index, className) {                 //added
+			// 		return `<span class="${className} current-project__bullet"></span>` //added
+			// }, 
 				dynamicBullets: true,
 				dynamicMainBullets: 1,
 			},
