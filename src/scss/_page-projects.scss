@@ -57,6 +57,7 @@
   // .current-project__slider
   &__slider {
     position: relative;
+
   }
   // .current-project__wrapper
   &__wrapper {
@@ -88,7 +89,6 @@
   // .current-project__slide-descr
   &__slide-descr {
     display: flex;
-    // justify-content: flex-end;
     flex-direction: column;
     row-gap: 60px;
     @extend %poir-400;
@@ -101,6 +101,7 @@
       line-height: math.div(15 , 15);
     }
     @media (max-width:$tablet){
+      row-gap: 50px;
       font-size: rem(14);
       line-height: math.div(14 , 14);
     }
@@ -119,7 +120,9 @@
   } 
   //.current-project__location
   &__location {
-
+    font-size: 20px;
+    @media (max-width:$tablet){
+    }
   }
   //.current-project__box
   &__box {
@@ -177,10 +180,27 @@
   background-color: #101115;
   box-shadow: 5px 6px 30.7px 1px rgba(29, 29, 29, 0.25);
   .current-project__slide-item {
+    position: relative;
     padding: 20px 15px;
     row-gap: 80px;
     @media (max-width:$tablet){
       padding: 15px 10px;
+    }
+    &::before{
+      content:'';
+      position: absolute;
+      background-color: #fff;
+      width: 880px;
+      height: 270px;
+      left: 100%;
+      bottom: -40px;
+      z-index: 10;
+      @media (max-width:$tablet){
+        height: 250px;
+      }
+      @media (max-width: em(520)){
+        height: 270px;
+      }
     }
   }
 
@@ -197,18 +217,17 @@
 }
 
 .current-project__slide.swiper-slide.swiper-slide-next {
-  overflow: hidden;
   max-height: 550px !important;
   @media (max-width: em(1260)){
     max-height: 510px !important;
   }
   @media (max-width:$tablet){
-    max-height: 595px !important;
+    max-height: 555px !important;
   }
 }
 
 .current-project__slide.swiper-slide.swiper-slide-duplicate-prev {
-  overflow: hidden;
+  
   max-height: 550px !important;
   @media (max-width: em(1260)){
     max-height: 510px !important;

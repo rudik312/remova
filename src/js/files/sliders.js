@@ -261,7 +261,7 @@ function initSliders() {
 			
 			// virtualTranslate : true,
 
-			// touchRatio: 0,
+			touchRatio: 0,
 			// simulateTouch: false,
 			loop: true,
 			// preloadImages: false,
@@ -317,6 +317,7 @@ function initSliders() {
 				768: {
 					slidesPerView: 2,
 					spaceBetween: 20,
+					touchRatio: 1,
 					// autoHeight: true,
 				},
 				1000: {
