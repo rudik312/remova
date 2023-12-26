@@ -252,7 +252,7 @@ function initSliders() {
 			spaceBetween: 20,
 			slideToClickedSlide: true,
 			// autoHeight: true,
-			speed: 1500,
+			speed: 3000,
 			
 			// grabCursor: true,
 			// slidesPerGroup: 3,
@@ -384,7 +384,7 @@ function initSliders() {
 			// },
 			autoplay: {
 				// delay: 3000,
-				disableOnInteraction: false,
+				// disableOnInteraction: false,
 				// dynamicBullets: true,
 				// dynamicMainBullets: 4,
 			},

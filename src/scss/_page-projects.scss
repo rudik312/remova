@@ -180,6 +180,7 @@
   background-color: #101115;
   box-shadow: 5px 6px 30.7px 1px rgba(29, 29, 29, 0.25);
   .current-project__slide-item {
+    cursor: default !important;
     position: relative;
     padding: 20px 15px;
     row-gap: 80px;
@@ -189,17 +190,23 @@
     &::before{
       content:'';
       position: absolute;
-      background-color: #fff;
+      background-color: transparent;
       width: 880px;
       height: 270px;
       left: 100%;
       bottom: -40px;
       z-index: 10;
-      @media (max-width:$tablet){
+      @media (max-width: em(1180)){
         height: 250px;
       }
+      @media (max-width:$tablet){
+        height: 230px;
+      }
       @media (max-width: em(520)){
-        height: 270px;
+        height: 250px;
+      }
+      @media (max-width:$mobileSmall){
+        height: 290px;
       }
     }
   }
@@ -276,7 +283,7 @@
     padding-right: 2px;
     position: absolute;
     left: 5%;
-    top: 220px;
+    top: 225px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -297,7 +304,7 @@
     padding-left: 2px;
     position: absolute;
     right: 5%;
-    top: 220px;
+    top: 225px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -318,4 +325,12 @@
 .project-inner__slide.swiper-slide.swiper-slide-active {
   max-width: 480px;
   max-height: 550px !important;
+
+  & .project-inner-next {
+    top: 220px;
+
+  } 
+  .project-inner-prev {
+  }
+  
 }
