@@ -320,7 +320,7 @@ function initSliders() {
 					// autoHeight: true,
 				},
 				1000: {
-					slidesPerView: 2,
+					slidesPerView: 3,
 					spaceBetween: 20,
 					// autoHeight: true,
 				},
@@ -360,7 +360,7 @@ function initSliders() {
 			slidesPerView: 1,
 			// centeredSlides: true,
 			spaceBetween: 20,
-			// slideToClickedSlide: true,
+			slideToClickedSlide: true,
 			// autoHeight: true,
 			speed: 1500,
 			
