@@ -211,12 +211,20 @@
 
 .current-project__slide.swiper-slide.swiper-slide-next {
   overflow: hidden;
-  max-height: 570px !important;
+  max-height: 530px !important;
+
+  .current-project__slide-item {
+
+  }
 }
 
 .current-project__slide.swiper-slide.swiper-slide-duplicate-prev {
   overflow: hidden;
-  max-height: 570px !important;
+  max-height: 530px !important;
+
+  .current-project__slide-item {
+
+  }
 }
 
 @keyframes slidein {
@@ -264,7 +272,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-shrink: 0;
     width: 20px;
     height: 20px;
     background-color: #fff;
@@ -285,7 +292,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-shrink: 0;
     width: 20px;
     height: 20px;
     background-color: #fff;

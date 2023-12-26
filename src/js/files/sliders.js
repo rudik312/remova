@@ -283,7 +283,7 @@ function initSliders() {
 			
 			pagination: {
 				el: '.current-project__pagination',
-				clickable: true,
+				clickable: false,
 			// 	renderBullet: function (index, className) {                 //added
 			// 		return `<span class="${className} current-project__bullet"></span>` //added
 			// }, 
