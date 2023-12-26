@@ -252,7 +252,7 @@ function initSliders() {
 			spaceBetween: 20,
 			slideToClickedSlide: true,
 			// autoHeight: true,
-			speed: 3000,
+			speed: 2000,
 			
 			// grabCursor: true,
 			// slidesPerGroup: 3,
@@ -311,7 +311,8 @@ function initSliders() {
 			breakpoints: {
 				320: {
 					slidesPerView: 2,
-					spaceBetween: 20,
+					spaceBetween: 10,
+					touchRatio: 1,
 					// autoHeight: true,
 				},
 				768: {
@@ -372,7 +373,7 @@ function initSliders() {
 			
 			// virtualTranslate : true,
 
-			// touchRatio: 0,
+			touchRatio: 0,
 			// simulateTouch: false,
 			loop: true,
 			// preloadImages: false,
