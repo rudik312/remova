@@ -245,14 +245,15 @@ function initSliders() {
 			modules: [Navigation, Pagination],
 			// preventClicks: true,
 			// preventClicksPropagation: true,
-			observer: true,
-			observeParents: true,
+			// observer: true,
+			// observeParents: true,
 			slidesPerView: 3,
 			// centeredSlides: true,
 			spaceBetween: 20,
 			slideToClickedSlide: true,
 			// autoHeight: true,
 			speed: 2000,
+			
 			
 			// grabCursor: true,
 			// slidesPerGroup: 3,
@@ -261,10 +262,10 @@ function initSliders() {
 			
 			// virtualTranslate : true,
 
-			touchRatio: 0,
-			simulateTouch: true,
+			touchRatio: 1,
+			// simulateTouch: true,
 			loop: true,
-			preloadImages: false,
+			// preloadImages: false,
 			// lazy: true,
 			// Эффекты
 			effect: 'slide',
@@ -310,7 +311,7 @@ function initSliders() {
 			
 			breakpoints: {
 				320: {
-					slidesPerView: 1,
+					slidesPerView: 2,
 					spaceBetween: 10,
 					touchRatio: 0,
 					// autoHeight: true,
@@ -369,10 +370,10 @@ function initSliders() {
 			slidesPerView: 1,
 			centeredSlides: true,
 			spaceBetween: 20,
-			slideToClickedSlide: true,
+			// slideToClickedSlide: true,
 			// autoHeight: true,
-			speed: 1500,
-			
+			speed: 1300,
+
 			// grabCursor: true,
 			// slidesPerGroup: 3,
 			// normalizeSlideIndex: true,
@@ -424,6 +425,7 @@ function initSliders() {
 			navigation: {
 				prevEl: '.project-inner-prev',
 				nextEl: '.project-inner-next',
+				disabledClass: 	'project-inner__btn-disabled',
 			},
 
 			// Брейкпоинты
