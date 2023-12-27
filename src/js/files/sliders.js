@@ -262,7 +262,7 @@ function initSliders() {
 			// virtualTranslate : true,
 
 			touchRatio: 0,
-			// simulateTouch: false,
+			simulateTouch: true,
 			loop: true,
 			preloadImages: false,
 			// lazy: true,
@@ -312,11 +312,11 @@ function initSliders() {
 				320: {
 					slidesPerView: 1,
 					spaceBetween: 10,
-					touchRatio: 1,
+					touchRatio: 0,
 					// autoHeight: true,
 				},
 
-				480: {
+				680: {
 					slidesPerView: 2,
 					spaceBetween: 10,
 					touchRatio: 1,
@@ -376,13 +376,14 @@ function initSliders() {
 			// grabCursor: true,
 			// slidesPerGroup: 3,
 			// normalizeSlideIndex: true,
-			// InitialSlide: 1,
+			InitialSlide: 1,
 			
 			// virtualTranslate : true,
 
-			touchRatio: 0,
-			// simulateTouch: false,
-			loop: true,
+			touchRatio: 1,
+			// simulateTouch: true,
+			touchReleaseOnEdges: true,
+			// loop: true,
 			// preloadImages: false,
 			// lazy: true,
 			// Эффекты

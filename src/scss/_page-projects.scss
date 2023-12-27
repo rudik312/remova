@@ -5,7 +5,8 @@
   // .current-project__inner
   &__inner {
     position: relative;
-    padding-top: 230px;
+    // padding-top: 230px;
+    padding-top: 50px;
     padding-bottom: 50px;
     display: flex;
     flex-direction: column;
@@ -41,6 +42,9 @@
         height: 165px;
       }
     }
+    @media (max-width: em(1380)){
+      padding-top: 50px;
+    }
   }
   // .current-project__title
   &__title {
@@ -59,7 +63,7 @@
   // .current-project__slider
   &__slider {
     position: relative;
-    min-height: 878px;
+    min-height: 874px;
   } 
   // .current-project__wrapper
   &__wrapper {
@@ -70,6 +74,7 @@
     // max-width: 380px;
 
   }
+
   // .current-project__slide-item
   &__slide-item {
     cursor: pointer;
@@ -135,7 +140,6 @@
   //.current-project__box
   &__box {
     display: none;
-    position: relative;
   }
   //.current-project__text
   &__text {
@@ -148,7 +152,7 @@
     justify-content: center;
     column-gap: 6px;
     width: auto !important;
-    bottom: 230px;
+    bottom: 300px;
     left: 50%;
     // .main-projects__pagination + .swiper-pagination-bullet
     & .swiper-pagination-bullet {
@@ -179,7 +183,6 @@
   }
 }
 
-
 //.current-project__slide.swiper-slide
 .current-project__slide.swiper-slide {
   padding: 20px 10px;
@@ -195,10 +198,9 @@
   .current-project__slide-item {
     cursor: default !important;
     position: relative;
-    // padding: 20px 10px;
     row-gap: 80px;
     @media (max-width:$tablet){
-      padding: 15px 10px;
+      // padding: 15px 10px;
     }
     @media (max-width: em(590)){
       row-gap: 50px;
@@ -210,14 +212,12 @@
       content:'';
       position: absolute;
       background-color: transparent;
+      // background-color: #fff;
       width: 880px;
       height: 220px;
       left: 100%;
       bottom: -20px;
       z-index: 10;
-      @media (max-width: em(1180)){
-        height: 250px;
-      }
       @media (max-width:$tablet){
         height: 170px;
       }
@@ -374,4 +374,40 @@
       transform: translateY(-35%);
     }
   }
+  //.project-inner__box
+  &__box {
+    max-width: 187px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: rem(20);
+    line-height: math.div(20 , 20);
+    color: #fff;
+    img {
+      width: 7px;
+      height: 12px;
+    }
+    @media (max-width:$mobileSmall){
+      font-size: rem(14);
+      line-height: math.div(14 , 14);
+    }
+  }
+
+  &__link {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 20px;
+  }
+}
+
+.project-slide__link {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #040406;
+  box-shadow: 1px 1px 7px 2px rgba(6, 6, 6, 0.31) inset, 5px 6px 30.7px 1px rgba(29, 29, 29, 0.25);
+  backdrop-filter: blur(7.5px);
 }
