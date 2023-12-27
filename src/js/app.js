@@ -228,7 +228,7 @@ import "./libs/dynamic_adapt.js";
 // import "./libs/swiper-bundle.min.js";
 
 
-import "./files/splide.js";
+// import "./files/splide.js";
 
 import "./libs/jquery.min.js"
 

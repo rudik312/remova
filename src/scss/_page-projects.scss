@@ -50,6 +50,8 @@
     line-height: math.div(31 , 32);
     color: $accent;
     @media (max-width:$mobileSmall){
+      font-size: rem(20);
+      line-height: math.div(19 , 20);
       row-gap: 20px;
     }
   }
@@ -125,10 +127,15 @@
       font-size: rem(14);
       line-height: math.div(15 , 16);
     }
+    @media (max-width:$mobileSmall){
+      font-size: rem(11);
+      line-height: math.div(10 , 11);
+    }
   }
   //.current-project__box
   &__box {
     display: none;
+    position: relative;
   }
   //.current-project__text
   &__text {
@@ -164,13 +171,14 @@
     @media (max-width:$tablet){
       left: 52%;
       bottom: 200px;
+      display: none;
     }
-    @media (max-width: em(560)){
-      bottom: 170px;
-    }
-    @media (max-width:$mobileSmall){
-      bottom: 110px;
-    }
+    // @media (max-width: em(560)){
+    //   bottom: 170px;
+    // }
+    // @media (max-width: em(360)){
+    //   bottom: 180px;
+    // }
 
   }
   @media (max-width:$tablet){
@@ -188,7 +196,7 @@
   .current-project__slide-item {
     cursor: default !important;
     position: relative;
-    padding: 20px 15px;
+    // padding: 20px 10px;
     row-gap: 80px;
     @media (max-width:$tablet){
       padding: 15px 10px;
@@ -240,6 +248,10 @@
       font-size: rem(14);
       line-height: math.div(15 , 16);
     }
+    @media (max-width:$mobileSmall){
+      font-size: rem(11);
+      line-height: math.div(10 , 11);
+    }
   }
 
   .current-project__box {
@@ -248,25 +260,32 @@
 }
 
 .current-project__slide.swiper-slide.swiper-slide-next {
-  max-height: 550px !important;
-  @media (max-width: em(1260)){
-    max-height: 510px !important;
+  // padding: 20px 10px;
+    .project-inner-prev,
+    .project-inner-next{
+    display: none;
   }
   @media (max-width:$tablet){
-    max-height: 555px !important;
+    padding: 15px 10px;
   }
 }
 
-.current-project__slide.swiper-slide.swiper-slide-duplicate-prev {
-  
-  max-height: 550px !important;
-  @media (max-width: em(1260)){
-    max-height: 510px !important;
+// .current-project__slide.swiper-slide.swiper-slide-duplicate-prev {
+//   padding: 20px 10px;
+//   @media (max-width:$tablet){
+//     padding: 15px 10px;
+//   }
+// }
+
+.current-project__slide.swiper-slide {
+  padding: 20px 10px !important;
+  @media (max-width:$tablet){
+    padding: 15px 10px;
   }
 }
+
 
 @keyframes slidein {
-
   from {
 
   }
@@ -308,6 +327,7 @@
     position: absolute;
     left: 30px;
     top: 30%;
+    transform: translateY(-30%);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -322,6 +342,19 @@
         background-color: $accent;
       }
     }
+    @media (max-width: em(620)){
+      top: 28%;
+      transform: translateY(-28%);
+    }
+    @media (max-width:$mobileSmall){
+      width: 18px;
+      height: 18px;
+      left: 20px;
+    }
+    @media (max-width: em(390)){
+      top: 35%;
+      transform: translateY(-35%);
+    }
   }
   //.project-inner-next
   &-next {
@@ -329,6 +362,7 @@
     position: absolute;
     right: 30px;
     top: 30%;
+    transform: translateY(-30%);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -342,6 +376,19 @@
       &:hover{
         background-color: $accent;
       }
+    }
+    @media (max-width: em(620)){
+      top: 28%;
+      transform: translateY(-28%);
+    }
+    @media (max-width:$mobileSmall){
+      width: 18px;
+      height: 18px;
+      right: 20px;
+    }
+    @media (max-width: em(390)){
+      top: 35%;
+      transform: translateY(-35%);
     }
   }
 }

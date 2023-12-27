@@ -264,7 +264,7 @@ function initSliders() {
 			touchRatio: 0,
 			// simulateTouch: false,
 			loop: true,
-			// preloadImages: false,
+			preloadImages: false,
 			// lazy: true,
 			// Эффекты
 			effect: 'slide',
@@ -310,25 +310,32 @@ function initSliders() {
 			
 			breakpoints: {
 				320: {
+					slidesPerView: 1,
+					spaceBetween: 10,
+					touchRatio: 1,
+					// autoHeight: true,
+				},
+
+				480: {
+					slidesPerView: 2,
+					spaceBetween: 10,
+					touchRatio: 1,
+				},
+
+				768: {
 					slidesPerView: 2,
 					spaceBetween: 10,
 					touchRatio: 1,
 					// autoHeight: true,
 				},
-				768: {
-					slidesPerView: 2,
-					spaceBetween: 20,
-					touchRatio: 1,
-					// autoHeight: true,
-				},
 				1000: {
 					slidesPerView: 3,
-					spaceBetween: 20,
+					spaceBetween: 10,
 					// autoHeight: true,
 				},
 				1260: {
 					slidesPerView: 3,
-					spaceBetween: 20,
+					spaceBetween: 10,
 					// autoHeight: true,
 				},
 			},
@@ -360,7 +367,7 @@ function initSliders() {
 			// observer: true,
 			// observeParents: true,
 			slidesPerView: 1,
-			// centeredSlides: true,
+			centeredSlides: true,
 			spaceBetween: 20,
 			slideToClickedSlide: true,
 			// autoHeight: true,
