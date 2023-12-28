@@ -62,8 +62,8 @@
 
   // .current-project__slider
   &__slider {
-    // position: relative;
-    min-height: 874px;
+    position: relative;
+    min-height: 884px;
   } 
   // .current-project__wrapper
   &__wrapper {
@@ -259,7 +259,7 @@
 }
 
 .current-project__slide.swiper-slide.swiper-slide-prev {
-  
+
     .project-inner-prev,
     .project-inner-next {
     display: none;
@@ -269,7 +269,7 @@
 }
 
 .current-project__slide.swiper-slide.swiper-slide-next {
-
+    // pointer-events: auto;
     .project-inner-prev,
     .project-inner-next {
     display: none;

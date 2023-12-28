@@ -253,16 +253,17 @@ function initSliders() {
 			slideToClickedSlide: true,
 			// autoHeight: true,
 			speed: 2000,
+			// touchReleaseOnEdges: true,
 			
 			
-			// grabCursor: true,
+			grabCursor: true,
 			// slidesPerGroup: 3,
 			// normalizeSlideIndex: true,
 			// InitialSlide: 1,
 			
 			// virtualTranslate : true,
 
-			touchRatio: 1,
+			touchRatio: 0,
 			// simulateTouch: true,
 			loop: true,
 			// preloadImages: false,
@@ -363,10 +364,10 @@ function initSliders() {
 			// Подключаем модули слайдера
 			// для конкретного случая
 			modules: [Navigation],
-			// preventClicks: true,
-			// preventClicksPropagation: true,
-			// observer: true,
-			// observeParents: true,
+			preventClicks: true,
+			preventClicksPropagation: true,
+			observer: true,
+			observeParents: true,
 			slidesPerView: 1,
 			centeredSlides: true,
 			spaceBetween: 20,
@@ -377,7 +378,7 @@ function initSliders() {
 			// grabCursor: true,
 			// slidesPerGroup: 3,
 			// normalizeSlideIndex: true,
-			InitialSlide: 1,
+			// InitialSlide: 1,
 			
 			// virtualTranslate : true,
 
