@@ -4,3 +4,17 @@ import { isMobile } from "./functions.js";
 import { flsModules } from "./modules.js";
 
 
+// document.addEventListener('DOMContentLoaded', function (e) {
+
+
+
+
+// });
+
+
+
+
+
+
+
+

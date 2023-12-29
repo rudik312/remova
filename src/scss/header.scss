@@ -173,7 +173,6 @@
 .submenu {
 	//.submenu__list
 	&__list {
-		// min-width: 150px;
 		position: absolute;
 		padding: 30px 25px;
 		top: 40px;
@@ -190,6 +189,13 @@
 		z-index: 50;
 		opacity: 0;
 		visibility: hidden;
+		// display: none;
+	}
+	//.submenu__list-active
+	&__list-active {
+		// display: flex;
+		opacity: 1;
+		visibility: visible;
 	}
 	//.submenu__item
 	&__item {
@@ -206,36 +212,6 @@
 		}
 	}
 
-}
-
-
-.nav_links li {
-	// display: inline-block; /*размещаем елементы по горизонтали  */
-	// padding: 20px 40px;
-	// position: relative;
-}
-.nav_links li a {
-	// transition: all .3s ease 0s;
-}
-
-// .nav_links li:hover ul.s_links {
-// 	// opacity: 1;
-// 	// visibility: visible;
-// }
-
-.s_links {
-
-
-	// 
-	// z-index: -1;
-}
-.s_links li {
-	// display: block;
-	// padding: 20px 40px;
-}
-
-.s_links li a {
-	// 
 }
 
 

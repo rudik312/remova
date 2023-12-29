@@ -357,6 +357,7 @@ function initSliders() {
 		// }
 		
 	}
+	
 	if (document.querySelector('.project-inner__slider')) { // Указываем скласс нужного слайдера
 		// Создаем слайдер
 			new Swiper('.project-inner__slider', { // Указываем скласс нужного слайдера
