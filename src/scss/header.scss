@@ -65,6 +65,7 @@
 	}
 	// .header__langs-ru
 	&__langs-ru {
+
 	}
 	// .header__langs-link
 	&__langs-link {
@@ -146,7 +147,8 @@
 			right: -100%;
 			top: 80px;
 			// width: calc(100% - 20px);
-			// height: 100%;
+			width: 100%;
+			height: 100%;
 			// width: 200px;
 			// height: 380px;
 			// overflow: auto;
@@ -157,9 +159,17 @@
 			box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 			.menu-open & {
 				z-index: 5;
+
+				justify-content: flex-start;
+				backdrop-filter: blur(10px);
+				background-color: rgba(0, 0, 0, 0.25);
 				// right: 10px;
 				// top: 0;
-				right: 70px;
+
+				// right: 70px;
+
+				right: 0;
+
 				top: 90px;
 				&::before {
 					right: 0;
@@ -356,163 +366,4 @@
 
 	}
 }
-
-// .menu {
-// 	flex: 0 1 420px;
-// 	// .menu__body
-// 	&__body {
-// 		@media (max-width: $tablet) {
-// 			position: fixed;
-// 			width: 100%;
-// 			height: 100%;
-// 			overflow: auto;
-// 			top: 0;
-// 			left: -100%;
-// 			background-color: #fcf8f3;
-// 			transition: left 0.3s ease 0s;
-// 			padding: 70px 15px 30px 15px;
-// 			&::before {
-// 				content: "";
-// 				position: fixed;
-// 				width: 100%;
-// 				height: 50px;
-// 				top: 0;
-// 				left: -100%;
-// 				transition: left 0.3s ease 0s;
-// 				background-color: #fcf8f3;
-// 				z-index: 2;
-// 			}
-// 			&._active {
-// 				left: 0;
-// 				&::before {
-// 					left: 0;
-// 				}
-// 			}
-// 		}
-// 	}
-// 	// .menu__list
-// 	&__list {
-// 		@media (min-width: $tablet) {
-// 			display: flex;
-// 			flex-wrap: wrap;
-// 			justify-content: space-evenly;
-// 		}
-// 	}
-// 	// .menu__item
-// 	&__item {
-// 		display: flex;
-// 		align-items: center;
-// 		justify-content: space-between;
-// 		flex-wrap: wrap;
-// 		margin: 0px 3px;
-// 		padding: 5px 0px;
-// 		position: relative;
-// 		@media (any-hover: hover) {
-// 			&:hover {
-// 				.menu__sub-list {
-// 					transform: translate(0px, 0px);
-// 					opacity: 1;
-// 					visibility: visible;
-// 					pointer-events: auto;
-// 				}
-// 				.menu__arrow {
-// 					transform: rotate(-180deg);
-// 				}
-// 				.menu__arrow,
-// 				.menu__link {
-// 					color: $accent;
-// 				}
-// 			}
-// 		}
-// 		@media (min-width: $tablet) {
-// 			&._hover {
-// 				.menu__sub-list {
-// 					transform: translate(0px, 0px);
-// 					opacity: 1;
-// 					visibility: visible;
-// 					pointer-events: auto;
-// 				}
-// 				.menu__arrow {
-// 					transform: rotate(-180deg);
-// 				}
-// 				.menu__arrow,
-// 				.menu__link {
-// 					color: $accent;
-// 				}
-// 			}
-// 		}
-// 		@media (max-width: $tablet) {
-// 			margin: 0px 0px 15px 0px;
-// 			&:last-child {
-// 				margin-bottom: 0;
-// 			}
-// 		}
-// 	}
-// 	// .menu__link
-// 	&__link {
-// 		font-weight: 500;
-// 		color: inherit;
-// 		transition: color 0.3s ease 0s;
-// 		@media (max-width: $tablet) {
-// 			font-size: 24px;
-// 			font-weight: 600;
-// 		}
-// 	}
-// 	// .menu__arrow
-// 	&__arrow {
-// 		margin: 0px 0px 0px 8px;
-// 		transition: all 0.3s ease 0s;
-// 		font-size: 8px;
-// 		@media (max-width: $tablet) {
-// 			font-size: 14px;
-// 			&._active {
-// 				transform: rotate(-180deg);
-// 			}
-// 		}
-// 	}
-// 	// .menu__sub-list
-// 	&__sub-list {
-// 		position: relative;
-// 		background-color: $accent;
-// 		padding: 15px;
-// 		flex: 1 1 100%;
-// 		@media (min-width: $tablet) {
-// 			opacity: 0;
-// 			transition: all 0.3s ease 0s;
-// 			transform: translate(0px, 10px);
-// 			visibility: hidden;
-// 			min-width: 200px;
-// 			left: 0;
-// 			pointer-events: none;
-// 			position: absolute;
-// 			top: 100%;
-// 			z-index: 5;
-// 		}
-// 		@media (max-width: $tablet) {
-// 			margin: 10px -15px 0px -15px;
-// 		}
-// 	}
-// 	// .menu__sub-item
-// 	&__sub-item {
-// 		&:not(:last-child) {
-// 			margin: 0px 0px 5px 0px;
-// 			@media (max-width: $tablet) {
-// 				margin: 0px 0px 10px 0px;
-// 			}
-// 		}
-// 	}
-// 	// .menu__sub-link
-// 	&__sub-link {
-// 		color: #fff;
-// 		line-height: 120%;
-// 		@media (any-hover: hover) {
-// 			&:hover {
-// 				text-decoration: underline;
-// 			}
-// 		}
-// 		@media (max-width: $tablet) {
-// 			font-size: 18px;
-// 		}
-// 	}
-// }
 
