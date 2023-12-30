@@ -6,7 +6,7 @@
 					<img src="@img/logo.svg" alt="">
 				</a>
 			</div>
-			<div class="header__langs" data-da=".menu__wrapper, 999.98">
+			<div class="header__langs" data-da=".menu__body, 999.98">
 				<div class="header__langs-ru">
 					<a href="./" class="header__langs-link">РУС</a>
 				</div>
@@ -19,53 +19,58 @@
 		<div class="header__bottom">
 			<div class="header__menu menu">
 				<div class="menu__wrapper">
-					<nav class="menu__body nav">
-						<ul class="menu__list">
+
+					<nav class="menu__body">
+						<ul data-spollers="999.98,max" class="menu__list">
 							<li class="menu__item">
 								<a class="menu__link" href="./index.html">Главная</a>
 							</li>
 							<li class="menu__item">
 								<a class="menu__link" href="./page-about.html">Компания</a>
-								<ul class="submenu__list">
-									<li class="submenu__item">
-										<a class="submenu__link" href="./page-about.html#about">О компании</a>
+								<button data-spoller type="button" class="menu__arrow _icon-arrow-down"></button>
+								<ul class="menu__sub-list">
+									<li class="menu__sub-item">
+										<a class="menu__sub-link" href="./page-about.html#about">О компании</a>
 									</li>
-									<li class="submenu__item">
-										<a class="submenu__link" href="./page-about.html#licenses" data-goto-speed="3000">Лицензии</a>
+									<li class="menu__sub-item">
+										<a class="menu__sub-link" href="./page-about.html#licenses">Лицензии</a>
+									</li>
+									<li class="menu__sub-item">
+										<a class="menu__sub-link" href="../page-recomend.html">Рекомендательное письмо</a>
 									</li>
 								</ul>
 							</li>
 							<li class="menu__item">
 								<a class="menu__link" href="./page-service.html">Услуги</a>
-								<ul class="submenu__list">
-									<li class="submenu__item">
-										<a href="./page-housing.html" class="submenu__link">Жилищное строительство</a>
+								<ul class="menu__sub-list">
+									<li class="menu__sub-item">
+										<a href="./page-housing.html" class="menu__sub-link">Жилищное строительство</a>
 									</li>
-									<li class="submenu__item">
-										<a href="./page-industrial.html" class="submenu__link">Промышленное строительство</a>
+									<li class="menu__sub-item">
+										<a href="./page-industrial.html" class="menu__sub-link">Промышленное строительство</a>
 									</li>
-									<li class="submenu__item">
-										<a href="./page-service.html" class="submenu__link">Строительно-монтажные работы</a>
+									<li class="menu__sub-item">
+										<a href="./page-service.html" class="menu__sub-link">Строительно-монтажные работы</a>
 									</li>
-									<li class="submenu__item">
-										<a href="./page-service.html#reconstruction" class="submenu__link">Реконструкция и ремонт</a>
+									<li class="menu__sub-item">
+										<a href="./page-service.html#reconstruction" class="menu__sub-link">Реконструкция и ремонт</a>
 									</li>
-									<li class="submenu__item">
-										<a href="./page-service.html#finishes" class="submenu__link">Отделочные работы</a>
+									<li class="menu__sub-item">
+										<a href="./page-service.html#finishes" class="menu__sub-link">Отделочные работы</a>
 									</li>
-									<li class="submenu__item">
-										<a href="./page-service.html#heating" class="submenu__link">Нагревание, вентиляция и кондиционирование</a>
+									<li class="menu__sub-item">
+										<a href="./page-service.html#heating" class="menu__sub-link">Нагревание, вентиляция и кондиционирование</a>
 									</li>
 								</ul>
 							</li>
 							<li class="menu__item">
 								<a class="menu__link" href="./page-projects.html">Проекты</a>
-								<ul class="submenu__list">
-									<li class="submenu__item">
-										<a href="#" class="submenu__link">Завершенные проекты</a>
+								<ul class="menu__sub-list">
+									<li class="menu__sub-item">
+										<a href="#" class="menu__sub-link">Завершенные проекты</a>
 									</li>
-									<li class="submenu__item">
-										<a href="#" class="submenu__link">Текущие проекты</a>
+									<li class="menu__sub-item">
+										<a href="#" class="menu__sub-link">Текущие проекты</a>
 									</li>
 								</ul>
 							</li>
@@ -80,6 +85,8 @@
 							</li>
 						</ul>
 					</nav>
+
+
 				</div>
 			</div>
 		</div>

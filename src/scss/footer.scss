@@ -59,6 +59,18 @@
   // &__item {
 
   // }
+  //.footer__policy
+  &__policy {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    font-size: rem(14);
+    line-height: math.div(13 , 14);
+  }
+  //.footer__policy-link
+  &__policy-link {
+
+  }
   // .footer__item-phone
 
   // .footer__item-email

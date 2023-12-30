@@ -48,7 +48,7 @@
   }
   // .current-project__title
   &__title {
-    z-index: 5;
+    z-index: 1;
     @extend %poir-400;
     font-size: rem(32);
     line-height: math.div(31 , 32);

@@ -39,7 +39,7 @@ flsFunctions.menuInit();
 Документация: https://template.fls.guru/template-docs/modul-spojlery.html
 Сниппет (HTML): spollers
 */
-// flsFunctions.spollers();
+flsFunctions.spollers();
 
 /*
 Модуль работы с табами
@@ -231,6 +231,8 @@ import "./libs/dynamic_adapt.js";
 // import "./files/splide.js";
 
 import "./libs/jquery.min.js"
+
+
 
 import "./files/script.js";
 //============================================================================================================================================================================================================================================
